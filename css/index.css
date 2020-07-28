@@ -110,7 +110,7 @@ body, html {
 
 
 /* section2 */
-#blog {
+#blog, #workprocess {
     background: #060707;
     color: #fff;
     overflow: hidden;
@@ -191,4 +191,90 @@ body, html {
 .bloglist .listdetail span:hover {
     background: #fff;
     color: #232323;
+}
+
+/* section 3 */
+.skyblue {
+    position: relative;
+    background-image: url(../images/homepage-9-parallax-img5.jpg);
+    background-size: cover;
+    overflow: hidden;
+    background-attachment: fixed;
+    height: 345px;
+}
+
+.skyblue .skybluebg {
+    background: #28BDBE;
+    height: 100%;
+    width: 100%;
+    opacity: 0.75;
+}
+
+.skyblue ul li {
+    display: inline-block;
+    position: relative;
+    padding: 130px 0;
+    width: 24.7%;
+    text-align: center;
+    color: #000;
+}
+
+.skyblue ul li h3 {
+    font-size: 48px;
+}
+
+.skyblue ul li span {
+    font-size: 14px;
+}
+
+/* section title */
+.sectitle {
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+.sectitle h3 {
+    font-size: 40px;
+    line-height: 46px;
+    margin-bottom: 25px;
+}
+
+.sectitle p {
+    font-size: 16px;
+    line-height: 23px;
+    margin-bottom: 25px;
+}
+
+/* section 3 */
+#workprocess {
+    padding: 130px 0;
+}
+
+.process {
+    width: 24.7%;
+    display: inline-block;
+    text-align: center;
+    padding: 0 15px;
+}
+
+.process .circle {
+    border: 1px solid #fff;
+    background: #6f6f6f;
+    /* border-radius: 100%; */
+    padding: 30px;
+}
+
+
+.process h6 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    margin: 30px 0 5px;
+}
+
+.process p {
+    font-size: 14px;
+    color: #6f6f6f;
+    line-height: 24px;
+    margin-bottom: 25px;
 }
