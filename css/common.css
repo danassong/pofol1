@@ -1,14 +1,15 @@
 @charset "utf-8";
 
-#header {
+header {
     position: fixed;
     width: 100%;
-    border-bottom: 1px solid rgba(255,255,255,0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
     z-index: 9999;
 }
 
-#header .logonav {
+.logonav {
     position: relative;
+    height: 72px;
 }
 
 .logonav .open_nav,
@@ -17,6 +18,66 @@
 }
 
 .logonav h1 {
-    line-height: 24px;
+    display: inline-block;
+    font-size: 24px;
     color: blueviolet;
+    padding: 0 15px;
+    top: 80%;
+    transform: translateY(80%);
+}
+
+.logonav h1 span {
+    font-size: 12px;
+}
+
+.logonav .navwrap {
+    width: 66.6667%;
+    right: 50%;
+}
+
+.logonav .nav {
+    position: absolute;
+    top: 0;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+.logonav .nav .depth1 > li {
+    display: inline-block;
+    position: relative;
+}
+
+.logonav .nav .depth1 > li > a {
+    position: relative;
+    display: block;
+    color: #666;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 20px;
+    padding: 26px 0;
+    background: transparent;
+    border-color: transparent;
+}
+
+.logonav .nav .depth1 > li > a:hover {
+    color: #28BDBE;
+}
+
+.logonav .topmenu {
+    position: relative;
+    font-size: 11px;
+    text-align: right;
+}
+
+.logonav .topmenu a {
+    padding: 0 10px;
+}
+
+
+
+
+
+
+.logonav .nav .depth2 {
+    display: none;
 }

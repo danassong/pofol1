@@ -2,3 +2,25 @@
 @import 'reset.css';
 @import 'common.css';
 
+.slide{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slide .slideinner {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.slide .slideinner:nth-child(1) {
+    background-image: url(../images/main01.jpg);
+}
+
+.slide .slideinner:nth-child(2) {
+    background-image: url(../images/main02.jpg);
+}
+
+.slide .slideinner:nth-child(3) {
+    background-image: url(../images/main03.jpg);
+}
