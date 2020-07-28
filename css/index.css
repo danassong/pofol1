@@ -2,15 +2,40 @@
 @import 'reset.css';
 @import 'common.css';
 
-.slide{
+body, html {
+    height: 100%;
+}
+
+#mainslide {
+    height: 100%;
+}
+
+.slideouter {
     width: 100%;
     height: 100%;
-    overflow: hidden;
+}
+
+.slide .slideinner:before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: '';
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.slide {
+    height: 100%;
 }
 
 .slide .slideinner {
     background-size: cover;
     background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
 }
 
 .slide .slideinner:nth-child(1) {
@@ -23,4 +48,147 @@
 
 .slide .slideinner:nth-child(3) {
     background-image: url(../images/main03.jpg);
+}
+
+.slide .text {
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.slide .text h6 {
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: normal;
+    padding-bottom: 20px;
+}
+
+.slide .text h2 {
+    font-size: 120px;
+    line-height: 110px;
+}
+
+.slide .text span {
+    color: #28BDBE;
+}
+
+
+.slide .text button {
+    border: 1.5px solid #fff;
+    padding: 10px 25px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 11px;
+    margin: 25px 10px 0;
+    transition: 0.5s;
+}
+
+.slide .text button:hover {
+    background: #fff;
+    color: #232323;
+}
+
+.slide .swipe {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slide .swipe .swipebullet {
+    display: inline-block;
+    margin: 0 5px;
+    height: 3px;
+    width: 30px;
+    border-radius: 0;
+    background: #fff;
+}
+
+
+/* section2 */
+#blog {
+    background: #060707;
+    color: #fff;
+    overflow: hidden;
+}
+
+#blog .bloglist {
+    position: relative;
+    padding: 0 15px;
+    /* height: 700px; */
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.bloglist ul li {
+    float: left;
+    padding: 50px 10px;
+    width: 25%;
+    text-align: center;
+}
+
+.bloglist ul li a {
+    display: block;
+}
+
+.bloglist ul li h1 {
+    font-size: 110px;
+    line-height: 110%;
+    font-weight: 600;
+    color: #212525;
+    transition: 0.5s;
+}
+
+.bloglist ul li h1:hover {
+    color: #25adae;
+}
+
+.bloglist ul li .listdetail {
+    padding: 40px 0;
+}
+
+.bloglist .listdetail h4 {
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 1px;
+    /* margin-bottom: 30px; */
+    color: #28BDBE;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.bloglist .listdetail h4:hover {
+    color: #fff;
+}
+
+.bloglist .listdetail img {
+    display: inline-block;
+    margin: 20px 0 15px;
+}
+
+.bloglist .listdetail p {
+    color: #939393;
+    font-size: 12px;
+    line-height: 20px;
+    margin-top: 2%;
+    margin-bottom: 20px;
+}
+
+.bloglist .listdetail span {
+    display: inline-block;
+    border: 2px solid #fff;
+    font-size: 9px;
+    padding: 1px 17px;
+    line-height: 22px;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.bloglist .listdetail span:hover {
+    background: #fff;
+    color: #232323;
 }

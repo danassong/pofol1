@@ -3,11 +3,11 @@
 header {
     position: fixed;
     width: 100%;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     z-index: 9999;
 }
 
-.logonav {
+header .logonav {
     position: relative;
     height: 72px;
 }
@@ -20,7 +20,7 @@ header {
 .logonav h1 {
     display: inline-block;
     font-size: 24px;
-    color: blueviolet;
+    color: #fff;
     padding: 0 15px;
     top: 80%;
     transform: translateY(80%);
@@ -50,27 +50,35 @@ header {
 .logonav .nav .depth1 > li > a {
     position: relative;
     display: block;
-    color: #666;
+    color: #fff;
     font-size: 14px;
     font-weight: bold;
     margin: 0 20px;
     padding: 26px 0;
-    background: transparent;
-    border-color: transparent;
+    transition: 1s;
 }
 
-.logonav .nav .depth1 > li > a:hover {
+.logonav .nav .depth1 > li > a:hover,
+.logonav .topmenu a:hover {
     color: #28BDBE;
 }
 
 .logonav .topmenu {
+    color: #fff;
+    font-weight: 700;
     position: relative;
     font-size: 11px;
     text-align: right;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .logonav .topmenu a {
+    position: relative;
     padding: 0 10px;
+    transition: 0.5s;
 }
 
 
