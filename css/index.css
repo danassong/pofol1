@@ -246,6 +246,7 @@ body, html {
 /* section 3 */
 #workprocess {
     padding: 130px 0;
+    background: #151616;
 }
 
 .process {
@@ -277,4 +278,50 @@ body, html {
     line-height: 24px;
     margin-bottom: 25px;
     margin: 0 32px;
+}
+
+
+/* readsection */
+.readwrap img {
+    float: left;
+    width: 50%;
+    height: 444px;
+}
+
+.readmore {
+    background: #000;
+    color: #939393;
+    float: right;
+    width: 50%;
+    height: 444px;
+    padding: 8%;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.readmore h6 {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+
+.readmore h4 {
+    font-size: 25px;
+    line-height: 26px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.readmore p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 25px;
+}
+
+.readmore span {
+    font-size: 11px;
+    padding: 10px 24px;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 4px;
 }
