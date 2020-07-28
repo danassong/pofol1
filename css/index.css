@@ -229,6 +229,7 @@ body, html {
 .sectitle {
     margin-bottom: 4%;
     text-align: center;
+    color: #fff;
 }
 
 .sectitle h3 {
@@ -282,16 +283,29 @@ body, html {
 
 
 /* readsection */
-.readwrap img {
+.readwrap img:first-of-type {
     float: left;
     width: 50%;
     height: 444px;
 }
 
+.readwrap img:last-of-type {
+    float: right;
+    width: 50%;
+    height: 444px;
+}
+
+.readmore:first-of-type {
+    float: right;
+}
+
+.readmore:last-of-type {
+    float: left;
+}
+
 .readmore {
     background: #000;
     color: #939393;
-    float: right;
     width: 50%;
     height: 444px;
     padding: 8%;
@@ -321,7 +335,129 @@ body, html {
 .readmore span {
     font-size: 11px;
     padding: 10px 24px;
+    padding-left: 40px;
     color: #fff;
     border: 2px solid #fff;
     border-radius: 4px;
+    transition: 0.5s;
+    position: relative;
+}
+
+.readmore span:before {
+    content: '\f144';
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    font-family:'Font Awesome 5 Free'; font-weight:900 !important;
+}
+
+.readmore span:hover {
+    background: #fff;
+    color: #232323;
+}
+
+/* section portfolio */
+#pofolsec {
+    background: #151616;
+    padding: 130px 0;
+}
+
+.pofolimg a {
+    width: 33.33%;
+    float: left;
+    padding: 7px 7px;
+}
+
+.pofolimg > div {
+    position: relative;
+}
+
+.pofolimg a {
+    position: relative;
+    display: inline-block;
+}
+
+#pofolsec .pofolimg .overlay {
+    position: absolute;
+    overflow: hidden;
+    top: 0; left: 0; right: 0; bottom: 0;
+    margin: 30px;
+    background: #fff;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#pofolsec .pofolimg div:hover .overlay {
+    opacity: 1;
+}
+
+.pofolimg .copy {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pofolimg .copy h6 {
+    text-align: center;
+    font-size: 16px;
+    color: #232323;
+    margin-bottom: 5px;
+}
+
+.pofolimg .copy p {
+    text-align: center;
+    font-size: 12px;
+    color: #939393;
+}
+
+/* section promote */
+#promote .part {
+    background-image: url(../images/bg-footbanner-01.jpg);
+    float: left;
+    width: 50%;
+    height: 420px;
+    position: relative;
+}
+
+.part:before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: '';
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.partcopy {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    color: #fff;
+}
+
+.partcopy h3 {
+    font-size: 40px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.partcopy p {
+    font-size: 14px;
+    color: #d6d5d5;
+    margin-bottom: 25px;
+    text-align: center;
+    line-height: 24px;
+}
+
+.partcopy span {
+    text-align: center;
+    border: 1px solid #fff;
+    padding: 5px 29px;
+    border-radius: 50%;
 }
