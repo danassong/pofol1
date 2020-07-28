@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+#header {
+    position: fixed;
+    width: 100%;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    z-index: 9999;
+}
+
+#header .logonav {
+    position: relative;
+}
+
+.logonav .open_nav,
+.logonav .close_nav {
+    display: none;
+}
+
+.logonav h1 {
+    line-height: 24px;
+    color: blueviolet;
+}
