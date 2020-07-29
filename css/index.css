@@ -507,8 +507,9 @@ body, html {
     font-size: 20px;
     position: fixed;
     right: 1.5%; bottom: 10%;
-    color: #28BDBE;
-    background-color: rgba(255, 255, 255, 0.15);
+    color: rgba(255, 255, 255, 1);
+    border-radius: 50%;
+    background: #28BDBE;
     width: 34px;
     height: 34px;
     text-align: center;
