@@ -51,7 +51,7 @@
 }
 
 #login {
-    padding: 130px 0;
+    padding: 5% 0 130px;
     overflow: hidden;
     display: block;
 }
@@ -61,7 +61,7 @@
     width: 600px;
     margin: 0 auto;
     text-align: center;
-    border: 1px solid #666;
+    box-shadow: 0 0 15px rgba(0,0,0,.1);
     padding: 40px 80px;
 }
 
@@ -93,7 +93,6 @@
 
 .login_cont .idpw_box label {
     line-height: 30px;
-    border: none;
 }
 
 .login_cont .idpw_box input {
@@ -123,7 +122,7 @@
     float: left;
     width: 70%;
     font-size: 11px;
-    line-height: 15px;
+    line-height: 17px;
     color: #777;
     text-align: left;
 }
@@ -139,14 +138,13 @@
 }
 
 .find_cont {
-    padding: 15px 5px;
+    padding: 20px 5px;
     position: relative;
 }
 
 .find_cont p {
-    text-align: left;
     font-size: 11px;
-    line-height: 15px;
+    line-height: 17px;
     color: #aaa;
 }
 
@@ -155,8 +153,7 @@
     color: #888;
     border: 1px solid #ccc;
     padding: 6px 15px;
-    margin-top: 15px;
     border-radius: 4px;
-    float: right;
-    position: absolute;
+    display: inline-block;
+    margin: 15px 5px 0;
 }
