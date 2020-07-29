@@ -54,13 +54,13 @@ header .logonav {
     font-size: 14px;
     font-weight: bold;
     margin: 0 20px;
-    padding: 26px 0;
+    padding: 28px 0;
     transition: 1s;
 }
 
 .logonav .nav .depth2 {
     position: absolute;
-    top: 73px;
+    top: 100%;
     left: 0;
     min-width: 220px;
     background: rgba(35,35,35,1);

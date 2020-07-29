@@ -394,8 +394,21 @@ body, html {
     transition: 0.5s;
 }
 
+#pofolsec .pofolimg a .pofolimgbox {
+    overflow: hidden;
+}
+
 #pofolsec .pofolimg div:hover .overlay {
     opacity: 1;
+}
+
+#pofolsec .pofolimg img {
+    transition: 0.3s;
+}
+
+#pofolsec .pofolimg div:hover img {
+    transform: scale(1.1);
+    filter: blur(4px);
 }
 
 .pofolimg .copy {
