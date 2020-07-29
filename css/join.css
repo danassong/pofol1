@@ -1,3 +1,93 @@
 @charset "utf-8";
 @import "reset.css";
 @import "common.css";
+
+#joinpage {
+    height: 400px;
+}
+
+#joinpage .joinimg {
+    background-image: url(../images/parallax-bg16.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-position-y: 15%;
+    text-align: center;
+}
+
+.joinimg:before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: '';
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.joinimg h2 {
+    font-size: 46px;
+    line-height: 49px;
+    color: #fff;
+    margin-bottom: 30px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: 500;
+    letter-spacing: 5px;
+}
+
+.joinimg p {
+    color: #fff;
+    opacity: 0.6;
+    font-size: 14px;
+    line-height: 24px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#join {
+    padding: 5% 0 130px;
+    overflow: hidden;
+    display: block;
+}
+
+.joinbox {
+    background: #fff;
+    width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 0 15px rgba(0,0,0,.1);
+    padding: 40px 80px;
+}
+
+.joinbox .join_list {
+    display: inline-block;
+}
+
+.joinbox .join_list label {
+    position: relative;
+    display: inline-block;
+}
+
+.joinbox .join_list input {
+    border: 1px solid red;
+}
+
+.joinbox .join_list .tit_lbl {
+    display: inline-block;
+    line-height: 30px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.joinbox .join_list li {
+    padding: 8px 0;
+}
+
+.joinform .info_content {
+    display: inline-block;
+    vertical-align: top;
+}
