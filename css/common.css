@@ -58,6 +58,38 @@ header .logonav {
     transition: 1s;
 }
 
+.logonav .nav .depth2 {
+    position: absolute;
+    top: 73px;
+    left: 0;
+    min-width: 220px;
+    background: rgba(35,35,35,1);
+    color: #9d9d9d;
+    text-align: left;
+    padding: 13px 0 15px;
+    font-size: 13px;
+    display: none;
+}
+
+.logonav .nav .depth2 li {
+    padding: 0 28px;
+}
+
+.logonav .nav .depth2 li a {
+    display: inline-block;
+    padding: 9px 0 7px;
+    transition: 0.5s;
+}
+
+.logonav .nav .depth1 > li:hover .depth2 {
+    display: block;
+}
+
+.logonav .nav .depth2 a:hover {
+    color: #28BDBE;
+    text-indent: 0.5em;
+}
+
 .logonav .nav .depth1 > li > a:hover,
 .logonav .topmenu a:hover {
     color: #28BDBE;
@@ -81,11 +113,96 @@ header .logonav {
     transition: 0.5s;
 }
 
+/* footer */
+footer {
+    background-color: #1c1c1c;
+    color: #6f6f6f;
+    padding: 5% 0;
+    font-size: 14px;
+    line-height: 24px;
+}
 
+footer .container {
+    position: relative;
+}
 
+footer .info {
+    float: left;
+    width: 33.33%;
+}
 
+footer .logo h3 {
+    font-size: 25px;
+    line-height: 30px;
+    color: #626262;
+    vertical-align: middle;
+    margin-right: 30%;
+    font-weight: 500;
+}
 
+footer .address p a {
+    transition: 0.5s;
+}
 
-.logonav .nav .depth2 {
-    display: none;
+footer .address p a:hover {
+    color: #fff;
+}
+
+footer .notice h2 {
+    display: inline-block;
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+footer .notice span {
+    font-size: 12px;
+}
+
+footer .notice table td {
+    padding-bottom: 3px;
+}
+
+footer .notice table td:first-child a::before {
+    content: 'ㆍ';
+}
+
+footer .notice table td:first-child{
+    color: #666;
+}
+
+footer .notice table td:last-child{
+    color: #999;
+    text-align: center;
+}
+
+footer .notice table col:first-child {
+    width: 70%;
+}
+
+footer .notice table col:last-child {
+    width: 30%;
+}
+
+footer .infofirst {
+    display: inline-block;
+    padding-bottom: 40px;
+    border-bottom: 0.5px solid #6f6f6f;
+}
+
+footer .infodetail {
+    font-size: 12px;
+    line-height: 20px;
+    padding-top: 40px;
+}
+
+footer .infodetail p {
+    float: left;
+    width: 70%;
+}
+
+footer .copyright {
+    float: right;
+    width: 30%;
+    text-align: right;
 }
