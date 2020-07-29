@@ -63,31 +63,101 @@
     padding: 40px 80px;
 }
 
-.joinbox .join_list {
-    display: inline-block;
+.joinbox h3 {
+    font-size: 25px;
+    margin-bottom: 25px;
+    color: #232323;
+    text-align: center;
 }
 
 .joinbox .join_list label {
     position: relative;
     display: inline-block;
+    width: 25%;
+    height: 40px;
+    color: #666;
 }
 
 .joinbox .join_list input {
-    border: 1px solid red;
+    /* border: 1px solid red; */
+    background: #eee;
+    height: 40px;
+    width: 48%;
+    padding-left: 1em;
 }
 
-.joinbox .join_list .tit_lbl {
-    display: inline-block;
+.joinbox .join_list button {
+    background: #D7BA9A;
     line-height: 30px;
-    font-size: 14px;
-    font-weight: bold;
+    padding: 0px 20px;
+    font-size: 12px;
+    border-radius: 20px;
+    margin-left: 1em;
+    color: #fff;
 }
 
 .joinbox .join_list li {
     padding: 8px 0;
 }
 
-.joinform .info_content {
-    display: inline-block;
+.joinbox .join_list .tit_lbl {
     vertical-align: top;
+    line-height: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.joinbox .join_list .info_content {
+    display: inline-block;
+}
+
+.joinbox .join_list .info_content > .w30 {
+    width: 29.5%;
+}
+
+.joinbox .join_list .info_content > .mb10 {
+    margin-bottom: 10px;
+}
+
+.joinbox .join_list .info_content > .w100 {
+    width: 120%;
+}
+
+.joinbox .join_list .info_content > span {
+    display: inline-block;
+    position: relative;
+    font-size: 14px;
+}
+
+.join_list .info_content span {
+    font-size: 14px;
+    color: #666;
+    line-height: 45px;
+    padding: 0 5px;
+}
+
+.join_list .info_content select {
+    height: 30px;
+    border: 1px solid #eee;
+    border-radius: 3px;
+    padding: 0 1em;
+}
+
+.join_form .btn {
+    margin-top: 20px;
+    text-align: center;
+}
+.join_form .btn input {
+    width: 120px;
+    height: 40px;
+    background: #ccc;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    font-size: 14px;
+    margin: 0 10px;
+}
+.join_form .btn input[type=submit] {
+    background: #4B637C;
 }
