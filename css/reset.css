@@ -37,10 +37,11 @@ table {
     overflow: hidden;
 }
 .row {
-    /* margin: 0 auto; */
-    margin-right: -15px;
-    margin-left: -15px;
-    padding: 0 65px;
+    margin: 0 auto;
+    max-width: 100%;;
+    /* margin-right: -15px;
+    margin-left: -15px; */
+    padding: 0 50px;
 }
 
 .container {
