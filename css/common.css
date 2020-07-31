@@ -229,3 +229,23 @@ footer .copyright {
     width: 30%;
     text-align: right;
 }
+
+.goTop {
+    display: block;
+    font-size: 20px;
+    position: fixed;
+    right: 1.5%; bottom: 10%;
+    color: rgba(255, 255, 255, 1);
+    border-radius: 50%;
+    background: #28BDBE;
+    width: 34px;
+    height: 34px;
+    text-align: center;
+    line-height: 34px;
+    z-index: 9999;
+    transition: 0.5s;
+}
+
+.goTop:hover {
+    transform: translateY(-10%);
+}
