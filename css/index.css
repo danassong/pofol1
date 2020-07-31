@@ -153,6 +153,7 @@ body, html {
 
 .bloglist ul li .listdetail {
     padding: 40px 0;
+    position: relative;
 }
 
 .bloglist .listdetail h4 {
@@ -163,6 +164,25 @@ body, html {
     color: #28BDBE;
     font-weight: 500;
     transition: 0.5s;
+    /* border-bottom: 1px solid #666;
+    padding-bottom: 20px;
+    width: 60%;
+    margin: 0 auto; */
+}
+
+.bloglist .listdetail hr {
+    width: 50%;
+    margin: 20px auto;
+    border: 0.5px solid #666;
+}
+
+.bloglist .listdetail .hrblue {
+    position: absolute;
+    width: 30%;
+    border: 0.5px solid #28BDBE;
+    top: 25.1%;
+    left: 50%;
+    transform: translate(-50%, -25.1%);
 }
 
 .bloglist .listdetail h4:hover {
@@ -178,7 +198,6 @@ body, html {
     color: #939393;
     font-size: 12px;
     line-height: 20px;
-    margin-top: 2%;
     margin-bottom: 20px;
 }
 
