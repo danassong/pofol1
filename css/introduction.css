@@ -1,0 +1,105 @@
+@charset 'utf-8';
+@import 'reset.css';
+@import 'common.css';
+
+#intropage {
+    height: 560px;
+}
+
+#intropage .introimg {
+    background-image: url(../images/parallax-bg16.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-position-y: 15%;
+    text-align: center;
+}
+
+.introimg:before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: '';
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.introimg h2 {
+    font-size: 46px;
+    line-height: 49px;
+    color: #fff;
+    margin-bottom: 30px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: 500;
+    letter-spacing: 5px;
+}
+
+.introimg p {
+    color: #fff;
+    opacity: 0.6;
+    font-size: 14px;
+    line-height: 24px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+#introbox {
+    position: relative;
+}
+
+#introbox .titlebox {
+    border-bottom: 2px solid #000;
+    padding-top: 4%;
+}
+
+#introbox .title {
+    padding-left: 15px;
+    width: 50%;
+    float: left;
+}
+
+#introbox .title h2 {
+    font-size: 32px;
+    line-height: 40px;
+    color: #232323;
+    font-weight: 500;
+}
+
+#introbox .title span {
+    color: #2c53af;
+}
+
+#introbox .title p {
+    font-size: 25px;
+    line-height: 30px;
+    color: #626262;
+    font-weight: 500;
+    padding-top: 20px;
+}
+
+#introbox .titlebox .imgbox {
+    text-align: right;
+}
+
+#introbox .intro {
+    padding: 2.5% 0;
+    font-size: 15px;
+    line-height: 24px;
+    color: #6f6f6f;
+    letter-spacing: -0.5px;
+}
+
+#introbox .intro span {
+    font-size: 20px;
+    color: #555;
+    font-weight: bold;
+    margin-bottom: 20px;
+    display: block;
+}

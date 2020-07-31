@@ -71,12 +71,12 @@ body, html {
     line-height: 110px;
 }
 
-.slide .text span {
+.slide .text h2 span {
     color: #28BDBE;
 }
 
 
-.slide .text button {
+.slide .text a {
     border: 1.5px solid #fff;
     padding: 10px 25px;
     color: #fff;
@@ -84,9 +84,10 @@ body, html {
     font-size: 11px;
     margin: 25px 10px 0;
     transition: 0.5s;
+    display: inline-block;
 }
 
-.slide .text button:hover {
+.slide .text a:hover {
     background: #fff;
     color: #232323;
 }
