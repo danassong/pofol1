@@ -121,7 +121,7 @@
 }
 
 .joinbox .join_list .info_content > .w100 {
-    width: 100%;
+    width: 120%;
 }
 
 .joinbox .join_list .info_content > span {
@@ -141,7 +141,7 @@
     height: 30px;
     border: 1px solid #eee;
     border-radius: 3px;
-    padding: 0 1em;
+    /* padding: 0 1em; */
 }
 
 .join_form .btn {
