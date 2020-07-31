@@ -133,10 +133,10 @@ section .titleh5 {
 }
 
 #seccol1 .pofolimg {
-    margin-top: 100px;
     height: 600px;
     position: relative;
     overflow: hidden;
+    margin: 100px auto 0;
 }
 
 #img4arr a {
