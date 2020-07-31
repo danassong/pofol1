@@ -1,0 +1,120 @@
+@charset "utf-8";
+@import "reset.css";
+@import "common.css";
+
+#pfmainbgbox {
+    height: 560px;
+}
+
+.pfmainbg {
+    background-image: url(../images/parallax-bg43.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.pfmainbg:before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: '';
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.pfmainbg h2 {
+    font-size: 46px;
+    line-height: 49px;
+    color: #fff;
+    margin-bottom: 30px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: 500;
+    letter-spacing: 5px;
+}
+
+.pfmainbg p {
+    color: #fff;
+    opacity: 0.6;
+    font-size: 14px;
+    line-height: 24px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+
+#pfimgbox .imgbox {
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    position: relative;
+    background-size: cover;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 700px;
+}
+
+#pfimgbox .imgbox:nth-of-type(1) {
+    background-image: url(../images/portfolio-item57.jpg);
+}
+
+#pfimgbox .imgbox:nth-of-type(2) {
+    background-image: url(../images/portfolio-item58.jpg);
+}
+
+#pfimgbox .imgbox:nth-of-type(3) {
+    background-image: url(../images/portfolio-item59.jpg);
+}
+
+#pfimgbox .imgbox:nth-of-type(4) {
+    background-image: url(../images/portfolio-item60.jpg);
+}
+
+#pfimgbox .imgbox:nth-of-type(5) {
+    background-image: url(../images/portfolio-item61.jpg);
+}
+
+#pfimgbox .imgbox:nth-of-type(6) {
+    background-image: url(../images/portfolio-item62.jpg);
+}
+
+#pfimgbox .textbox p {
+    font-size: 11px;
+    line-height: 14px;
+    color: #232323;
+    opacity: 0.6;
+    margin-bottom: 25px;
+}
+
+#pfimgbox .textbox h6 {
+    font-size: 20px;
+    line-height: 26px;
+    color: #232323;
+    padding: 16px 35px;
+    display: inline-block;
+    background-color: #fff;
+}
+
+#pfimgbox .textbox span {
+    font-size: 9px;
+    padding: 1px 17px;
+    line-height: 22px;
+    background: #000000;
+    color: #fff;
+    margin-bottom: 70px;
+    display: inline-block;
+}
+
+#pfimgbox .textbox {
+    padding-left: 15px;
+    position: absolute;
+    bottom: 0;
+}
