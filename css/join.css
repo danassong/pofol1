@@ -57,7 +57,7 @@
 
 .joinbox {
     background: #fff;
-    width: 800px;
+    width: 900px;
     margin: 0 auto;
     box-shadow: 0 0 15px rgba(0,0,0,.1);
     padding: 40px 80px;
@@ -113,7 +113,7 @@
 }
 
 .joinbox .join_list .info_content > .w30 {
-    width: 22%;
+    width: 27%;
 }
 
 .joinbox .join_list .info_content > .mb10 {
@@ -121,7 +121,7 @@
 }
 
 .joinbox .join_list .info_content > .w100 {
-    width: 120%;
+    width: 138%;
 }
 
 .joinbox .join_list .info_content > span {
