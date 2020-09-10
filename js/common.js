@@ -20,7 +20,7 @@
     $('.logoNav > h1').on('click', function(e){
         e.preventDefault()
         $('#secContainer').remove()
-        $('#secBox').load('main.html')
+        $('#secBox').load('index.html')
     })
 
 
