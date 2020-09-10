@@ -2,6 +2,9 @@
 @import "reset.css";
 @import "common.css";
 
+.secbg {
+    background: #fff;
+}
 
 #loginpage {
     height: 400px;
@@ -54,7 +57,6 @@
     padding: 5% 0 130px;
     overflow: hidden;
     display: block;
-    background: #fff;
 }
 
 .loginbox {

@@ -2,6 +2,10 @@
 @import 'reset.css';
 @import 'common.css';
 
+.secbg {
+    background: #fff;
+}
+
 #intropage {
     height: 560px;
 }
@@ -52,7 +56,6 @@
 
 #introbox {
     position: relative;
-    background: #fff;
 }
 
 #introbox .titlebox {
