@@ -2,7 +2,7 @@
 
     $('#secBox').load('main.html')
 
-    $('.navwrap > .depth2 > a').on('click', function(e){
+    $('.navwrap .depth1 .depth2 li > a').on('click', function(e){
         e.preventDefault()
         var url = $(this).attr('href')
         $('#secContainer').remove()
