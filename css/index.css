@@ -1,6 +1,6 @@
 @charset 'utf-8';
-/* @import 'reset.css';*/
-@import 'common.css';
+/* @import 'reset.css';
+@import 'common.css'; */
 
 body, html {
     height: 100%;
@@ -38,17 +38,21 @@ body, html {
     background-position: center center;
 }
 
-.slide .slideinner:nth-child(1) {
+.slide .slideinner {
     background-image: url(../images/main01.jpg);
 }
 
-.slide .slideinner:nth-child(2) {
+/* .slide .slideinner:nth-child(1) {
+    background-image: url(../images/main01.jpg);
+} */
+
+/* .slide .slideinner:nth-child(2) {
     background-image: url(../images/main02.jpg);
 }
 
 .slide .slideinner:nth-child(3) {
     background-image: url(../images/main03.jpg);
-}
+} */
 
 .slide .text {
     text-align: center;
