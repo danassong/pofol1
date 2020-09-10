@@ -6,6 +6,10 @@ body, html {
     height: 100%;
 }
 
+#secBox {
+    height: 100%;
+}
+
 #secContainer {
     height: 100%;
 }
