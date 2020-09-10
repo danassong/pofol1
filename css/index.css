@@ -36,10 +36,8 @@ body, html {
     width: 100%;
     height: 100%;
     background-position: center center;
-}
-
-.slide .slideinner {
     background-image: url(../images/main01.jpg);
+
 }
 
 /* .slide .slideinner:nth-child(1) {
