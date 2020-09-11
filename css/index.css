@@ -52,10 +52,6 @@
     background: rgba(0, 0, 0, 0.5);
 }
 
-/* .mainSec .slide {
-    height: 100%;
-} */
-
 .mainSec .slideinner .slide1 {
     background-image: url(../images/main01.jpg);
 }
