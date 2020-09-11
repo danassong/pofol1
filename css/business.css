@@ -10,18 +10,18 @@ body {
     padding: 130px 0;
 } */
 
-#imgbg {
+.businessSec #imgbg {
     padding: 130px 0 0 !important;
     overflow: hidden;
 }
 
-#imgbg img {
+.businessSec #imgbg img {
     width: 100%;
     padding: 0 15px;
     margin: 0 auto;
 }
 
-section .title {
+.businessSec .title {
     font-size: 40px;
     line-height: 46px;
     color: #fff;
@@ -30,7 +30,7 @@ section .title {
     text-align: center;
 }
 
-section .subtitle {
+.businessSec .subtitle {
     font-size: 18px;
     line-height: 26px;
     color: #6f6f6f;
@@ -39,26 +39,26 @@ section .subtitle {
     margin-bottom: 100px;
 }
 
-section .subtitle span {
+businessSec .subtitle span {
     border-bottom: 1px solid #6f6f6f;
     display: inline-block;
     padding-bottom: 1px;
 }
 
-section .explain {
+businessSec .explain {
     font-size: 14px;
     color: #6f6f6f;
     font-weight: 400;
     line-height: 24px;
 }
 
-section .highlight {
+businessSec .highlight {
     font-size: 18px;
     line-height: 26px;
     color: #fff;
 }
 
-section .titleh5 {
+businessSec .titleh5 {
     font-size: 32px;
     line-height: 40px;
     color: #fff;
