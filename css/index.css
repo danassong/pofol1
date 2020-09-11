@@ -41,6 +41,7 @@ body, html {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    height: 732px;
 }
 
 .mainSec .slideinner .slide:before {
