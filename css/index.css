@@ -111,14 +111,16 @@ body, html {
     color: #232323;
 }
 
-.mainSec .swipe {
+
+/* 슬릭 막대바 */
+.mainSec .slideouter .slick-dots {
     position: absolute;
     bottom: 20px;
     width: 100%;
     text-align: center;
 }
 
-.mainSec .swipe .swipebullet {
+.mainSec .slideouter .slick-dots li {
     display: inline-block;
     margin: 0 5px;
     height: 3px;
@@ -128,7 +130,7 @@ body, html {
     position: relative;
 }
 
-.mainSec .swipe .swipebullet.slick-active {
+.mainSec .slideouter .slick-dots li.slick-active {
     background: rgba(255, 255, 255, 1);
 }
 
