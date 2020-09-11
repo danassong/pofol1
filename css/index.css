@@ -33,16 +33,17 @@ body, html {
 
 .mainSec .slideinner {
     height: 732px;
+    position: relative;
 }
 
-.mainSec .slideouter .slide {
+.mainSec .slideinner .slide {
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
 
-.mainSec .slideouter .slide:before {
+.mainSec .slideinner .slide:before {
     position: absolute;
     top: 0;
     bottom: 0;
