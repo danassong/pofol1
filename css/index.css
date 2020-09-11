@@ -31,6 +31,13 @@ body, html {
     height: 732px;
 }
 
+.mainSec .slideouter .slide {
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
 .mainSec .slideouter .slide:before {
     position: absolute;
     top: 0;
@@ -44,16 +51,6 @@ body, html {
 /* .mainSec .slide {
     height: 100%;
 } */
-
-.mainSec .slideinner .slide {
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-    width: 100%;
-    /* height: 100%; */
-    height: 732px;
-    background-position: center center;
-}
 
 .mainSec .slideinner .slide1 {
     background-image: url(../images/main01.jpg);
