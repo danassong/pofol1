@@ -26,7 +26,11 @@ body, html {
     /* height: 100%; */
 }
 
-.mainSec .slide .slideinner:before {
+.mainSec .slideouter {
+    position: relative;
+}
+
+.mainSec .slideouter .slideinner:before {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -40,7 +44,7 @@ body, html {
     height: 100%;
 } */
 
-.mainSec .slide .slideinner {
+.mainSec .slideouter .slideinner .slide {
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
