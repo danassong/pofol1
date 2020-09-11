@@ -17,11 +17,13 @@
     })
 
 
-    $('.logoNav > h1').on('click', function(e){
-        e.preventDefault()
-        $('#secContainer').remove()
-        $('#secBox').load('index.html')
-    })
+    $('.logonav > h1').load('index.html')
+
+    // $('.logoNav > h1').on('click', function(e){
+    //     e.preventDefault()
+    //     $('#secContainer').remove()
+    //     $('#secBox').load('index.html')
+    // })
 
 
 })(jQuery)
