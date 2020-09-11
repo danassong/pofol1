@@ -31,6 +31,10 @@ body, html {
     height: 732px;
 }
 
+.mainSec .slideinner {
+    height: 732px;
+}
+
 .mainSec .slideouter .slide {
     position: relative;
     background-size: cover;
