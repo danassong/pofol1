@@ -6,24 +6,24 @@ body, html {
     height: 100%;
 }
 
-#secBox {
+/* #secBox {
     height: 100%;
-}
+} */
 
-#secContainer {
+/* #secContainer {
     height: 100%;
-}
-.mainSec {
+} */
+/* .mainSec {
     height: 100%;
-}
+} */
 
-.mainSec #mainslide {
+/* .mainSec #mainslide {
     height: 100%;
-}
+} */
 
 .mainSec .slideouter {
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
 }
 
 .mainSec .slide .slideinner:before {
@@ -36,16 +36,17 @@ body, html {
     background: rgba(0, 0, 0, 0.5);
 }
 
-.mainSec .slide {
+/* .mainSec .slide {
     height: 100%;
-}
+} */
 
 .mainSec .slide .slideinner {
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
+    height: 732px;
     background-position: center center;
 }
 
