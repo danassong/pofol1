@@ -2,9 +2,9 @@
 /* @import 'reset.css';
 @import 'common.css'; */
 
-body, html {
+/* body, html {
     height: 100%;
-}
+} */
 
 /* #secBox {
     height: 100%;
@@ -28,11 +28,9 @@ body, html {
 
 .mainSec .slideouter {
     position: relative;
-    height: 732px;
 }
 
 .mainSec .slideinner {
-    height: 732px;
     position: relative;
 }
 
