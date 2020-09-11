@@ -44,7 +44,7 @@ body, html {
     height: 100%;
 } */
 
-.mainSec .slideouter .slideinner .slide {
+.mainSec .slideinner .slide {
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -54,15 +54,15 @@ body, html {
     background-position: center center;
 }
 
-.mainSec .slide .slideinner .slide1 {
+.mainSec .slideinner .slide1 {
     background-image: url(../images/main01.jpg);
 }
 
-.mainSec .slide .slideinner .slide2 {
+.mainSec .slideinner .slide2 {
     background-image: url(../images/main02.jpg);
 }
 
-.mainSec .slide .slideinner .slide3 {
+.mainSec .slideinner .slide3 {
     background-image: url(../images/main03.jpg);
 }
 
@@ -108,14 +108,14 @@ body, html {
     color: #232323;
 }
 
-.mainSec .slide .swipe {
+.mainSec .swipe {
     position: absolute;
     bottom: 20px;
     width: 100%;
     text-align: center;
 }
 
-.mainSec .slide .swipe .swipebullet {
+.mainSec .swipe .swipebullet {
     display: inline-block;
     margin: 0 5px;
     height: 3px;
@@ -125,7 +125,7 @@ body, html {
     position: relative;
 }
 
-.mainSec .slide .swipe .swipebullet.slick-active {
+.mainSec .swipe .swipebullet.slick-active {
     background: rgba(255, 255, 255, 1);
 }
 
