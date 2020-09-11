@@ -27,7 +27,6 @@
 
     $('section').scroll(function () {
         sct = $(this).scrollTop()
-        var winHeight = $(this).height()
         var blogcount = $('.bloglist > li').length
 
         if (sct >= $('#blog').offset().top) {

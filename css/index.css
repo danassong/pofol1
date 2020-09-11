@@ -186,12 +186,7 @@
     width: 25%;
     text-align: center;
     opacity: 0;
-    animation:liani 0.5s both;
-}
-
-@keyframes liani {
-    0% { opacity:0 }
-    100% { opacity:1 }
+    animation:fadeInUp 0.5s both;
 }
 
 .mainSec .bloglist ul li a {
