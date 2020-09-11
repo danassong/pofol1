@@ -64,6 +64,25 @@
     background-image: url(../images/main03.jpg);
 }
 
+/* 슬라이드 화살표 */
+
+/* .slideouter .marrow {
+    font-size: 60px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    z-index: 999;
+} */
+.slide-outer .prevArrow {
+    display: none;
+}
+.slide-outer .nextArrow {
+    display: none;
+}
+
+
 
 .mainSec .slide .text {
     text-align: center;

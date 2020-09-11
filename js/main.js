@@ -14,8 +14,8 @@
         draggable: true,
         fade: false,
         arrows: true,
-        // prevArrow: '<button class="prevArrow marrow"><i class = "fas fa-angle-left"></i></button>',
-        // nextArrow: '<button class="nextArrow marrow"><i class = "fas fa-angle-right"></i></button>',
+        prevArrow: '<button class="prevArrow marrow"><i class = "fas fa-angle-left"></i></button>',
+        nextArrow: '<button class="nextArrow marrow"><i class = "fas fa-angle-right"></i></button>',
     })
 
 
