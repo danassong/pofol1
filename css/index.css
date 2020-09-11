@@ -28,6 +28,7 @@ body, html {
 
 .mainSec .slideouter {
     position: relative;
+    height: 732px;
 }
 
 .mainSec .slideouter .slideinner:before {
