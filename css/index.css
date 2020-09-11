@@ -50,17 +50,18 @@ body, html {
     background-position: center center;
 }
 
-.mainSec .slide .slideinner:nth-child(1) {
+.mainSec .slide .slideinner .slide1 {
     background-image: url(../images/main01.jpg);
 }
 
-.mainSec .slide .slideinner:nth-child(2) {
+.mainSec .slide .slideinner .slide2 {
     background-image: url(../images/main02.jpg);
 }
 
-.mainSec .slide .slideinner:nth-child(3) {
+.mainSec .slide .slideinner .slide3 {
     background-image: url(../images/main03.jpg);
 }
+
 
 .mainSec .slide .text {
     text-align: center;
@@ -87,7 +88,6 @@ body, html {
     color: #28BDBE;
 }
 
-
 .mainSec .slide .text a {
     border: 1.5px solid #fff;
     padding: 10px 25px;
@@ -106,9 +106,9 @@ body, html {
 
 .mainSec .slide .swipe {
     position: absolute;
-    bottom: 10%;
-    left: 50%;
-    transform: translateX(-50%);
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
 }
 
 .mainSec .slide .swipe .swipebullet {
@@ -117,12 +117,12 @@ body, html {
     height: 3px;
     width: 30px;
     border-radius: 0;
-    background: #fff;
-    opacity: 0.5;
+    background: rgba(255, 255, 255, 0.5);
+    position: relative;
 }
 
-.mainSec .slide .swipe .swipebullet:first-child {
-    opacity: 1;
+.mainSec .slide .swipe .swipebullet.slick-active {
+    background: rgba(255, 255, 255, 1);
 }
 
 
