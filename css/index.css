@@ -14,16 +14,16 @@ body, html {
     height: 100%;
 }
 
-#mainslide {
+.mainSec #mainslide {
     height: 100%;
 }
 
-.slideouter {
+.mainSec .slideouter {
     width: 100%;
     height: 100%;
 }
 
-.slide .slideinner:before {
+.mainSec .slide .slideinner:before {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -33,11 +33,11 @@ body, html {
     background: rgba(0, 0, 0, 0.5);
 }
 
-.slide {
+.mainSec .slide {
     height: 100%;
 }
 
-.slide .slideinner {
+.mainSec .slide .slideinner {
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -46,19 +46,19 @@ body, html {
     background-position: center center;
 }
 
-.slide .slideinner:nth-child(1) {
+.mainSec .slide .slideinner:nth-child(1) {
     background-image: url(../images/main01.jpg);
 }
 
-.slide .slideinner:nth-child(2) {
+.mainSec .slide .slideinner:nth-child(2) {
     background-image: url(../images/main02.jpg);
 }
 
-.slide .slideinner:nth-child(3) {
+.mainSec .slide .slideinner:nth-child(3) {
     background-image: url(../images/main03.jpg);
 }
 
-.slide .text {
+.mainSec .slide .text {
     text-align: center;
     color: #fff;
     position: absolute;
@@ -67,24 +67,24 @@ body, html {
     transform: translate(-50%, -50%);
 }
 
-.slide .text h6 {
+.mainSec .slide .text h6 {
     font-size: 25px;
     line-height: 30px;
     font-weight: normal;
     padding-bottom: 20px;
 }
 
-.slide .text h2 {
+.mainSec .slide .text h2 {
     font-size: 120px;
     line-height: 110px;
 }
 
-.slide .text h2 span {
+.mainSec .slide .text h2 span {
     color: #28BDBE;
 }
 
 
-.slide .text a {
+.mainSec .slide .text a {
     border: 1.5px solid #fff;
     padding: 10px 25px;
     color: #fff;
@@ -95,19 +95,19 @@ body, html {
     display: inline-block;
 }
 
-.slide .text a:hover {
+.mainSec .slide .text a:hover {
     background: #fff;
     color: #232323;
 }
 
-.slide .swipe {
+.mainSec .slide .swipe {
     position: absolute;
     bottom: 10%;
     left: 50%;
     transform: translateX(-50%);
 }
 
-.slide .swipe .swipebullet {
+.mainSec .slide .swipe .swipebullet {
     display: inline-block;
     margin: 0 5px;
     height: 3px;
@@ -117,19 +117,19 @@ body, html {
     opacity: 0.5;
 }
 
-.slide .swipe .swipebullet:first-child {
+.mainSec .slide .swipe .swipebullet:first-child {
     opacity: 1;
 }
 
 
 /* section2 */
-#blog, #workprocess {
+.mainSec #blog, .mainSec #workprocess {
     background: #060707;
     color: #fff;
     overflow: hidden;
 }
 
-#blog .bloglist {
+.mainSec #blog .bloglist {
     position: relative;
     padding: 0 15px;
     /* height: 700px; */
@@ -137,18 +137,18 @@ body, html {
     margin-left: auto;
 }
 
-.bloglist ul li {
+.mainSec .bloglist ul li {
     float: left;
     padding: 50px 10px;
     width: 25%;
     text-align: center;
 }
 
-.bloglist ul li a {
+.mainSec .bloglist ul li a {
     display: block;
 }
 
-.bloglist ul li h1 {
+.mainSec .bloglist ul li h1 {
     font-size: 110px;
     line-height: 110%;
     font-weight: 600;
@@ -156,16 +156,16 @@ body, html {
     transition: 0.5s;
 }
 
-.bloglist ul li h1:hover {
+.mainSec .bloglist ul li h1:hover {
     color: #25adae;
 }
 
-.bloglist ul li .listdetail {
+.mainSec .bloglist ul li .listdetail {
     padding: 40px 0;
     position: relative;
 }
 
-.bloglist .listdetail h4 {
+.mainSec .bloglist .listdetail h4 {
     font-size: 16px;
     line-height: 23px;
     letter-spacing: 1px;
@@ -179,13 +179,13 @@ body, html {
     margin: 0 auto; */
 }
 
-.bloglist .listdetail hr {
+.mainSec .bloglist .listdetail hr {
     width: 50%;
     margin: 20px auto;
     border: 0.5px solid #666;
 }
 
-.bloglist .listdetail .hrblue {
+.mainSec .bloglist .listdetail .hrblue {
     position: absolute;
     width: 30%;
     border: 0.5px solid #28BDBE;
@@ -194,23 +194,23 @@ body, html {
     transform: translate(-50%, -25.1%);
 }
 
-.bloglist .listdetail h4:hover {
+.mainSec .bloglist .listdetail h4:hover {
     color: #fff;
 }
 
-.bloglist .listdetail img {
+.mainSec .bloglist .listdetail img {
     display: inline-block;
     margin: 20px 0 15px;
 }
 
-.bloglist .listdetail p {
+.mainSec .bloglist .listdetail p {
     color: #939393;
     font-size: 12px;
     line-height: 20px;
     margin-bottom: 20px;
 }
 
-.bloglist .listdetail span {
+.mainSec .bloglist .listdetail span {
     display: inline-block;
     border: 2px solid #fff;
     font-size: 9px;
@@ -220,13 +220,13 @@ body, html {
     transition: 0.5s;
 }
 
-.bloglist .listdetail span:hover {
+.mainSec .bloglist .listdetail span:hover {
     background: #fff;
     color: #232323;
 }
 
 /* section 3 */
-.skyblue {
+.mainSec .skyblue {
     position: relative;
     background-image: url(../images/homepage-9-parallax-img5.jpg);
     background-size: cover;
@@ -235,14 +235,14 @@ body, html {
     height: 345px;
 }
 
-.skyblue .skybluebg {
+.mainSec .skyblue .skybluebg {
     background: #28BDBE;
     height: 100%;
     width: 100%;
     opacity: 0.75;
 }
 
-.skyblue ul li {
+.mainSec .skyblue ul li {
     float: left;
     padding: 130px 0;
     width: 25%;
@@ -250,47 +250,47 @@ body, html {
     color: #000;
 }
 
-.skyblue ul li h3 {
+.mainSec .skyblue ul li h3 {
     font-size: 48px;
 }
 
-.skyblue ul li span {
+.mainSec .skyblue ul li span {
     font-size: 14px;
 }
 
 /* section title */
-.sectitle {
+.mainSec .sectitle {
     margin-bottom: 4%;
     text-align: center;
     color: #fff;
 }
 
-.sectitle h3 {
+.mainSec .sectitle h3 {
     font-size: 40px;
     line-height: 46px;
     margin-bottom: 25px;
 }
 
-.sectitle p {
+.mainSec .sectitle p {
     font-size: 16px;
     line-height: 23px;
     margin-bottom: 25px;
 }
 
 /* section 3 */
-#workprocess {
+.mainSec #workprocess {
     padding: 130px 0;
     background: #151616;
 }
 
-.process {
+.mainSec .process {
     width: 25%;
     float: left;
     text-align: center;
     padding: 0 15px;
 }
 
-.process .circle {
+.mainSec .process .circle {
     width: 130px;
     height: 130px;
     background-color: #212525;
@@ -299,14 +299,14 @@ body, html {
     margin: 0 auto;
 }
 
-.process h6 {
+.mainSec .process h6 {
     font-size: 16px;
     font-weight: 700;
     color: #fff;
     margin: 30px 0 5px;
 }
 
-.process p {
+.mainSec .process p {
     font-size: 14px;
     color: #6f6f6f;
     line-height: 24px;
@@ -316,27 +316,27 @@ body, html {
 
 
 /* readsection */
-.readwrap img:first-of-type {
+.mainSec .readwrap img:first-of-type {
     float: left;
     width: 50%;
     height: 444px;
 }
 
-.readwrap img:last-of-type {
+.mainSec .readwrap img:last-of-type {
     float: right;
     width: 50%;
     height: 444px;
 }
 
-.readmore:first-of-type {
+.mainSec .readmore:first-of-type {
     float: right;
 }
 
-.readmore:last-of-type {
+.mainSec .readmore:last-of-type {
     float: left;
 }
 
-.readmore {
+.mainSec .readmore {
     background: #000;
     color: #939393;
     width: 50%;
@@ -346,26 +346,26 @@ body, html {
     text-align: center;
 }
 
-.readmore h6 {
+.mainSec .readmore h6 {
     font-size: 14px;
     line-height: 24px;
     margin-bottom: 10px;
 }
 
-.readmore h4 {
+.mainSec .readmore h4 {
     font-size: 25px;
     line-height: 26px;
     color: #fff;
     margin-bottom: 20px;
 }
 
-.readmore p {
+.mainSec .readmore p {
     font-size: 14px;
     line-height: 24px;
     margin-bottom: 25px;
 }
 
-.readmore span {
+.mainSec .readmore span {
     font-size: 11px;
     padding: 10px 24px;
     padding-left: 40px;
@@ -376,7 +376,7 @@ body, html {
     position: relative;
 }
 
-.readmore span:before {
+.mainSec .readmore span:before {
     content: '\f144';
     position: absolute;
     top: 50%;
@@ -386,33 +386,33 @@ body, html {
     font-family:'Font Awesome 5 Free'; font-weight:900 !important;
 }
 
-.readmore span:hover {
+.mainSec .readmore span:hover {
     background: #fff;
     color: #232323;
 }
 
 /* section portfolio */
-#pofolsec {
+.mainSec #pofolsec {
     background: #151616;
     padding: 130px 0;
 }
 
-.pofolimg a {
+.mainSec .pofolimg a {
     width: 33.33%;
     float: left;
     padding: 7px 7px;
 }
 
-.pofolimg > div {
+.mainSec .pofolimg > div {
     position: relative;
 }
 
-.pofolimg a {
+.mainSec .pofolimg a {
     position: relative;
     display: inline-block;
 }
 
-#pofolsec .pofolimg .overlay {
+.mainSec #pofolsec .pofolimg .overlay {
     position: absolute;
     overflow: hidden;
     top: 0; left: 0; right: 0; bottom: 0;
@@ -422,45 +422,45 @@ body, html {
     transition: 0.5s;
 }
 
-#pofolsec .pofolimg a .pofolimgbox {
+.mainSec #pofolsec .pofolimg a .pofolimgbox {
     overflow: hidden;
 }
 
-#pofolsec .pofolimg div:hover .overlay {
+.mainSec #pofolsec .pofolimg div:hover .overlay {
     opacity: 1;
 }
 
-#pofolsec .pofolimg img {
+.mainSec #pofolsec .pofolimg img {
     transition: 0.3s;
 }
 
-#pofolsec .pofolimg div:hover img {
+.mainSec #pofolsec .pofolimg div:hover img {
     transform: scale(1.1);
     filter: blur(4px);
 }
 
-.pofolimg .copy {
+.mainSec .pofolimg .copy {
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
 }
 
-.pofolimg .copy h6 {
+.mainSec .pofolimg .copy h6 {
     text-align: center;
     font-size: 16px;
     color: #232323;
     margin-bottom: 5px;
 }
 
-.pofolimg .copy p {
+.mainSec .pofolimg .copy p {
     text-align: center;
     font-size: 12px;
     color: #939393;
 }
 
 /* section promote */
-#promote .partwrap > div:first-of-type {
+.mainSec #promote .partwrap > div:first-of-type {
     background-image: url(../images/bg-footbanner-01.jpg);
     float: left;
     width: 50%;
@@ -468,7 +468,7 @@ body, html {
     position: relative;
 }
 
-#promote .partwrap > div:last-of-type {
+.mainSec #promote .partwrap > div:last-of-type {
     background-image: url(../images/colorfulBG.jpg);
     float: right;
     width: 50%;
@@ -476,7 +476,7 @@ body, html {
     position: relative;
 }
 
-.part:before {
+.mainSec .part:before {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -486,7 +486,7 @@ body, html {
     background: rgba(0, 0, 0, 0.5);
 }
 
-.partcopy {
+.mainSec .partcopy {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -496,7 +496,7 @@ body, html {
     text-align: center;
 }
 
-.partcopy i {
+.mainSec .partcopy i {
     font-size: 60px;
     margin-bottom: 25px;
 }
@@ -515,7 +515,7 @@ body, html {
     line-height: 24px;
 }
 
-.partcopy span {
+.mainSec .partcopy span {
     text-align: center;
     border: 2px solid #fff;
     padding: 10px 29px;
@@ -524,7 +524,7 @@ body, html {
     transition: 0.5s;
 }
 
-.partcopy span:hover {
+.mainSec .partcopy span:hover {
     background: #fff;
     color: #232323;
     cursor: pointer;
