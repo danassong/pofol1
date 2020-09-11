@@ -23,7 +23,7 @@
 
 
     /* 마우스 오르내릴때 화면 온오프 */
-    var sct = 0
+    /* var sct = 0
 
     $('section').scroll(function () {
         sct = $(this).scrollTop()
@@ -37,7 +37,7 @@
                 })
             }
         }
-    })
+    }) */
 
 
 })(jQuery)
