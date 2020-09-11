@@ -13,6 +13,9 @@ body, html {
 #secContainer {
     height: 100%;
 }
+.mainSec {
+    height: 100%;
+}
 
 .mainSec #mainslide {
     height: 100%;
