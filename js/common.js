@@ -1,5 +1,21 @@
 (function ($) {
 
+    /* 첫 로딩 화면 */
+    var colorCode = ['#28BDBE', '#7CC6C6', '#B0DADA', '#DAEDED']
+    var minCnt = setInterval(minusCount, 500)
+    var k = 5
+    function minusCount() {
+        k--;
+        if (k===0) {
+            clearInterval(minCnt)
+            $('.introAni').fadeOut(500)
+            return false
+        }
+        $('.introAni i').css({
+            color: colorCode[k-1]
+        }) 
+    }
+
 
     /* PAGE 로드 분리 */
     $('#secBox').load('main.html')
