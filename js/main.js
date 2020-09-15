@@ -46,7 +46,7 @@
 
 
         // section 타이틀 fadein
-        var secNear = $('.sectitle').offset().top - $(this).height/2
+        var secNear = $('.sectitle').offset().top - $(this).height()/2
         if (sct >= secNear) {
             $('.sectitle').addClass('on')
         } else {
