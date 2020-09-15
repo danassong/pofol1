@@ -37,21 +37,20 @@
         }
 
 
-        var curriNear = $('.curriInfo').offset().top - $(this).height()/2
-        if (sct >= curriNear){
-            $('.curriInfo').addClass('on')
-        } else { 
-            $('.curriInfo').removeClass('on')
-        }
-
 
         // section 타이틀 fadein
-        var secNear = $('.sectitle').offset().top - $(this).height()/2
-        if (sct >= secNear) {
-            $('.sectitle').addClass('on')
-        } else {
-            $('.sectitle').removeClass('on')
-        }
+
+        $('.sectitle').each(function() {
+            var secNear = $(this).offset().top - $(window).height()/2
+
+            if (sct >= secNear) {
+                $(this).addClass('on')
+            } else {
+                $(this).removeClass('on')
+            }
+        })
+
+
 
 
 
@@ -68,6 +67,7 @@
             $('.sectitle').removeClass('fadeInUp')
         }
 
+        
 
 
         var readNear = $('.readwrap').offset().top - $(this).height()/2
@@ -77,6 +77,18 @@
             $('.readwrap').removeClass
         }
 
+
+
+        var pofolNear = $('.pofolimg').offset().top - $(this).height()/2
+        if (sct >= pofolNear ) {
+            for ( var i = 0; i < $('.pofolimgbox').length; i++) {
+                $('.pofolimgbox').eq(i).css({
+                    animationDelay: i * 0.5 + 's'
+                }).addClass('zoomIn')
+            }
+        } else {
+            ('.pofolimgbox').removeClass('zoomIn')
+        }
     })
 
 

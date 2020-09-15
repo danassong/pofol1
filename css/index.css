@@ -524,6 +524,14 @@
 
 .mainSec #pofolsec .pofolimg a .pofolimgbox {
     overflow: hidden;
+    opacity: 0;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+}
+
+.mainSec #pofolsec .pofolimg a .pofolimgbox.zoomIn {
+    animation-duration: 1s;
+    animation-fill-mode: both;
 }
 
 .mainSec #pofolsec .pofolimg div:hover .overlay {
