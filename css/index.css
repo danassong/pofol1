@@ -338,7 +338,7 @@
     margin-bottom: 25px;
 }
 
-.titlebox.on .sectitle {
+.titlebox .sectitle.on {
     animation: fadeInUp 1s both;
 }
 
@@ -411,15 +411,15 @@
     transform: translate3d(100%, 0, 0);
 }
 
-.mainSec .readmore:first-of-type {
+.mainSec .readwrap .readmore:first-of-type {
     float: right;
 }
 
-.mainSec .readmore:last-of-type {
+.mainSec .readwrap .readmore:last-of-type {
     float: left;
 }
 
-.mainSec .readmore {
+.mainSec .readwrap .readmore {
     background: #000;
     color: #939393;
     width: 50%;
@@ -427,28 +427,31 @@
     padding: 8%;
     vertical-align: middle;
     text-align: center;
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
 }
 
-.mainSec .readmore h6 {
+.mainSec .readwrap .readmore h6 {
     font-size: 14px;
     line-height: 24px;
     margin-bottom: 10px;
 }
 
-.mainSec .readmore h4 {
+.mainSec .readwrap .readmore h4 {
     font-size: 25px;
     line-height: 26px;
     color: #fff;
     margin-bottom: 20px;
 }
 
-.mainSec .readmore p {
+.mainSec .readwrap .readmore p {
     font-size: 14px;
     line-height: 24px;
     margin-bottom: 25px;
 }
 
-.mainSec .readmore span {
+.mainSec .readwrap .readmore span {
     font-size: 11px;
     padding: 10px 24px;
     padding-left: 40px;
@@ -459,7 +462,7 @@
     position: relative;
 }
 
-.mainSec .readmore span:before {
+.mainSec .readwrap .readmore span:before {
     content: '\f144';
     position: absolute;
     top: 50%;
@@ -469,18 +472,21 @@
     font-family:'Font Awesome 5 Free'; font-weight:900 !important;
 }
 
-.mainSec .readmore span:hover {
+.mainSec .readwrap .readmore span:hover {
     background: #fff;
     color: #232323;
 }
 
-.mainSec .readwrap img:first-of-type {
+.mainSec .readwrap.on img:first-of-type {
     animation: fadeInLeft 1s both;
 }
-.mainSec .readwrap img:last-of-type {
+.mainSec .readwrap.on img:last-of-type {
     animation: fadeInRight 1s both;
 }
 
+.mainSec .readwrap.on .readmore {
+    animation: fadeInDown 1s both;
+}
 
 
 

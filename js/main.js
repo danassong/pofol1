@@ -70,11 +70,11 @@
 
 
 
-        var readNear = $('.readmore').offset().top - $(this).height()/2
+        var readNear = $('.readwrap').offset().top - $(this).height()/2
         if (sct >= readNear) {
-            $('.readmore').addClass
+            $('.readwrap').addClass
         } else {
-            $('.readmore').removeClass
+            $('.readwrap').removeClass
         }
 
     })
