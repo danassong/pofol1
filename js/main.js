@@ -68,6 +68,15 @@
             $('.sectitle').removeClass('fadeInUp')
         }
 
+
+
+        var readNear = $('.readmore').offset().top - $(this).height()/2
+        if (sct >= readNear) {
+            $('.readmore').addClass
+        } else {
+            $('.readmore').removeClass
+        }
+
     })
 
 

@@ -397,12 +397,18 @@
     float: left;
     width: 50%;
     height: 444px;
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
 }
 
 .mainSec .readwrap img:last-of-type {
     float: right;
     width: 50%;
     height: 444px;
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
 }
 
 .mainSec .readmore:first-of-type {
@@ -467,6 +473,17 @@
     background: #fff;
     color: #232323;
 }
+
+.mainSec .readwrap img:first-of-type {
+    animation: fadeInLeft 1s both;
+}
+.mainSec .readwrap img:last-of-type {
+    animation: fadeInRight 1s both;
+}
+
+
+
+
 
 /* section portfolio */
 .mainSec #pofolsec {
