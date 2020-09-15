@@ -38,21 +38,30 @@
 
 
 
-    /* 마우스 오르내릴때 화면 온오프 */
-    /* var sct = 0
-
-    $('section').scroll(function () {
-        sct = $(this).scrollTop()
-        var blogcount = $('.bloglist > li').length
-
-        if (sct >= $('#blog').offset().top) {
-            for (var i = 0; i < blogcount; i++) {
-                $('.gallery > li').eq(i).css({
-                    animationDelay: (i + 1) * 0.15 + 's'
-                })
-            }
+    /* 마우스 오르내릴때 헤더 */
+    var sct = 0;
+    $(window).scroll(function () {
+        sct = $(this).scrollTop();
+        
+        //헤더 상단
+        if (sct >= 200) {
+            $("header").css({
+                background: 'rgba(0,0,0,0.5)',
+                height: 62 + 'px'
+            });
+            $('.logonav').css({
+                height: 62 + 'px'
+            })
+        } else {
+            $("header").css({
+                background: 'rgba(0,0,0,0)',
+                height: 72 + 'px'
+            });
+            $('.logonav').css({
+                height: 72 + 'px'
+            })
         }
-    }) */
+    });
 
 
 })(jQuery)

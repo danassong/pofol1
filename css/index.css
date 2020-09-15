@@ -486,10 +486,10 @@
     animation: fadeInRight 1s both 1s;
 }
 .mainSec .readwrap.on .readmore:first-of-type {
-    animation: fadeInDown 1s both;
+    animation: fadeInDown 1s both 0.5s;
 }
 .mainSec .readwrap.on .readmore:last-of-type {
-    animation: fadeInDown 1s both 1s;
+    animation: fadeInDown 1s both 1.5s;
 }
 
 
