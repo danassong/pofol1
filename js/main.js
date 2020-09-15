@@ -27,20 +27,47 @@
         var blogNear = $('.bloglist').offset().top - $(this).height()/2
 
         if (sct >= blogNear) {
-            for ( var i = 0; i < $('.blogul .blgli').length; i++) {
+            for ( var i = 0; i < $('.blogul .blogli').length; i++) {
                 $('.blogul .blogli').eq(i).css({
                     animationDelay: i * 0.3 + 's'
-                }).addClass('animate__fadeInUp')
+                }).addClass('fadeInUp')
             }
         } else {
-            $('.blogul .blogli').removeClass('animate__fadeInUp')
+            $('.blogul .blogli').removeClass('fadeInUp')
         }
 
-        // if (sct >= blogNear){
-        //     $('.bloglist').addClass('on')
-        // } else {
-        //     $('.bloglist').removeClass('on')
-        // }
+
+        var curriNear = $('.curriInfo').offset().top - $(this).height()/2
+        if (sct >= curriNear){
+            $('.curriInfo').addClass('on')
+        } else { 
+            $('.curriInfo').removeClass('on')
+        }
+
+
+        // section 타이틀 fadein
+        var secNear = $('.sectitle').offset().top - $(this).height/2
+        if (sct >= secNear) {
+            $('.sectitle').addClass('on')
+        } else {
+            $('.sectitle').removeClass('on')
+        }
+
+
+
+
+        var procNear = $('.process').offset().top - $(this).height()/2
+        if (sct >= procNear) {
+            for (var i = 0; i < $('.process').length; i++) {
+                $('.process').eq(i).css({
+                    animationDelay: i * 0.5 + 's'
+                }).addClass('fadeInRight')
+            }
+        } else {
+            $('.process').removeClass('fadeInRight')
+            $('.sectitle').removeClass('fadeInUp')
+        }
+
     })
 
 

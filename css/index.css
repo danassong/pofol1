@@ -188,12 +188,11 @@
     width: 25%;
     text-align: center;
     opacity: 0;
-    /* animation:fadeInUp 0.5s both; */
     -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0); 
+    transform: translate3d(0, 100%, 0);
 }
 
-.mainSec .bloglist .blogul .blogli.animate__fadeInUp {
+.mainSec .bloglist .blogul .blogli.fadeInUp {
     animation-duration: 1s;
     animation-fill-mode: both;
 }    
@@ -313,24 +312,39 @@
     font-size: 14px;
 }
 
+
+
+
+
 /* section title */
-.mainSec .sectitle {
+.titlebox .sectitle {
     margin-bottom: 4%;
     text-align: center;
     color: #fff;
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
 }
-
-.mainSec .sectitle h3 {
+ 
+.titlebox .sectitle h3 {
     font-size: 40px;
     line-height: 46px;
     margin-bottom: 25px;
 }
 
-.mainSec .sectitle p {
+.titlebox .sectitle p {
     font-size: 16px;
     line-height: 23px;
     margin-bottom: 25px;
 }
+
+.titlebox.on .sectitle {
+    animation: fadeInUp 1s both;
+}
+
+
+
+
 
 /* section 3 */
 .mainSec #workprocess {
@@ -343,6 +357,14 @@
     float: left;
     text-align: center;
     padding: 0 15px;
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+}
+
+.mainSec .process.fadeInRight {
+    animation-duration: 1s;
+    animation-fill-mode: both;
 }
 
 .mainSec .process .circle {
