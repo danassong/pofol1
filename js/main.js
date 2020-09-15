@@ -51,15 +51,11 @@
         })
 
 
-
-
-
-
         var procNear = $('.process').offset().top - $(this).height()/2
         if (sct >= procNear) {
             for (var i = 0; i < $('.process').length; i++) {
                 $('.process').eq(i).css({
-                    animationDelay: i * 0.5 + 's'
+                    animationDelay: i * 0.3 + 's'
                 }).addClass('fadeInRight')
             }
         } else {
@@ -68,13 +64,11 @@
         }
 
         
-
-
         var readNear = $('.readwrap').offset().top - $(this).height()/2
         if (sct >= readNear) {
-            $('.readwrap').addClass
+            $('.readwrap').addClass('on')
         } else {
-            $('.readwrap').removeClass
+            $('.readwrap').removeClass('on')
         }
 
 

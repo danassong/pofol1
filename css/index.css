@@ -393,6 +393,9 @@
 
 
 /* readsection */
+.mainSec #readsec {
+    background: #000;
+}
 .mainSec .readwrap img:first-of-type {
     float: left;
     width: 50%;
@@ -420,7 +423,6 @@
 }
 
 .mainSec .readwrap .readmore {
-    background: #000;
     color: #939393;
     width: 50%;
     height: 444px;
@@ -481,12 +483,15 @@
     animation: fadeInLeft 1s both;
 }
 .mainSec .readwrap.on img:last-of-type {
-    animation: fadeInRight 1s both;
+    animation: fadeInRight 1s both 1s;
 }
-
-.mainSec .readwrap.on .readmore {
+.mainSec .readwrap.on .readmore:first-of-type {
     animation: fadeInDown 1s both;
 }
+.mainSec .readwrap.on .readmore:last-of-type {
+    animation: fadeInDown 1s both 1s;
+}
+
 
 
 
