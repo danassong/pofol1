@@ -29,6 +29,7 @@ header {
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     z-index: 9999;
     height: 72px;
+    transition: 1s;
 }
 
 header .logonav {
@@ -42,13 +43,11 @@ header .logonav {
 }
 
 .logonav h1 {
-    display: inline-block;
+    float: left;
     font-size: 24px;
     color: #fff;
-    top: 45%;
-    transform: translateY(-45%);
-    padding: 28.5px 15px;
-
+    padding: 21.7px 15px;
+    transition: 1s;
 }
 
 .logonav h1 span {
@@ -56,15 +55,14 @@ header .logonav {
 }
 
 .logonav .navwrap {
-    width: 66.6667%;
-    right: 50%;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .logonav .nav {
-    position: absolute;
-    top: 0;
-    right: 50%;
-    transform: translateX(50%);
+    padding: 27px 0;
+    transition: 1s;
 }
 
 .logonav .nav .depth1 > li {
@@ -79,8 +77,6 @@ header .logonav {
     font-size: 14px;
     font-weight: bold;
     margin: 0 20px;
-    padding: 28.5px 0;
-    transition: 1s;
 }
 
 .logonav .nav .depth2 {
@@ -123,20 +119,15 @@ header .logonav {
 .logonav .topmenu {
     color: #fff;
     font-weight: 700;
-    position: relative;
     font-size: 11px;
     text-align: right;
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 28.5px 0;
+    float: right;
 }
 
 .logonav .topmenu a {
-    position: relative;
-    padding: 0 10px;
-    transition: 0.5s;
+    padding: 30px 10px;
+    display:inline-block;
+    transition: 1s;
 }
 
 /* footer */

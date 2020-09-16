@@ -34,7 +34,7 @@
         $('#secBox').load(url)
     })
 
-    $('.logonav > h1').load('index.html')
+    // $('.logonav > h1').load('index.html')
 
 
 
@@ -49,29 +49,35 @@
                 background: 'rgba(0,0,0,0.5)',
                 height: 62 + 'px'
             });
-            $('.logonav').css({
-                paddingTop: 23 + 'px',
-                paddingBottom: 23 + 'px',
-                height: 62 + 'px'
+            $('.logonav h1').css({
+                paddingTop: 16.7 + 'px',
+                paddingBottom: 16.7 + 'px',
             })
-            $('.nav .depth1 > li > a').css({
-                paddingTop: 23 + 'px',
-                paddingBottom: 23 + 'px'
+            $('.logonav .nav').css({
+                paddingTop: 22 + 'px',
+                paddingBottom: 22 + 'px'
+            })
+            $('.logonav .topmenu a').css({
+                paddingTop: 25 + 'px',
+                paddingBottom: 25 + 'px',
             })
         } else {
             $("header").css({
                 background: 'rgba(0,0,0,0)',
                 height: 72 + 'px'
             });
-            $('.logonav').css({
-                paddingTop: 28.5 + 'px',
-                paddingBottom: 28.5 + 'px',
-                height: 72 + 'px'
+            $('.logonav h1').css({
+                paddingTop: 21.7 + 'px',
+                paddingBottom: 21.7 + 'px',
             });
             
-            $('.nav .depth1 > li > a').css({
-                paddingTop: 28.5 + 'px',
-                paddingBottom: 28.5 + 'px'
+            $('.logonav .nav').css({
+                paddingTop: 27 + 'px',
+                paddingBottom: 27 + 'px'
+            })
+            $('.logonav .topmenu a').css({
+                paddingTop: 30 + 'px',
+                paddingBottom: 30 + 'px',
             })
         }
     });
