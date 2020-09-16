@@ -502,14 +502,12 @@
     padding: 130px 0;
 }
 
-.mainSec .pofolimg a {
-    width: 33.33%;
-    float: left;
-    padding: 7px 7px;
-}
 
 .mainSec .pofolimg > div {
     position: relative;
+    width: 33.33%;
+    float: left;
+    padding: 7px 7px;
 }
 
 .mainSec .pofolimg a {

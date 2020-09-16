@@ -1,0 +1,157 @@
+@charset 'utf-8';
+
+.noticePage {
+    background: #fff;
+}
+
+
+/* 상단배경 */
+#noticebgbox {
+    height: 560px;
+}
+
+.noticebg {
+    background-image: url(../images/parallax-bg43.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.noticebg:before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: '';
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.noticebg h2 {
+    font-size: 46px;
+    line-height: 49px;
+    color: #fff;
+    margin-bottom: 30px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: 500;
+    letter-spacing: 5px;
+}
+
+.noticebg p {
+    color: #fff;
+    opacity: 0.6;
+    font-size: 14px;
+    line-height: 24px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+
+
+/* 테이블 */
+.noticeBox {
+    margin: 0 auto;
+}
+.noticeTable {
+    margin: 20px 0 50px;
+}
+.noticeTable col:nth-child(1) {
+    width: 8%;
+}
+.noticeTable col:nth-child(2) {
+    width: auto;
+}
+.noticeTable col:nth-child(3) {
+    width: 13%;
+}
+.noticeTable col:nth-child(4) {
+    width: 13%;
+}
+.noticeTable col:nth-child(5) {
+    width: 8%;
+}
+.noticeTable table {
+    border: none;
+    font-size: 13px;
+}
+.noticeTable th, .noticeTable td {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+.noticeTable tbody td:nth-child(2) {
+    text-align: left;
+}
+.noticeTable th {
+    background:#28BDBE;
+    border-top: 1px solid#999;
+    color: #fff;
+}
+.noticeTable tbody tr:hover {
+    background:#28BDBE;
+    color: #fff;
+    cursor: pointer;
+}
+
+.noticePage .numlist {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 14px;
+}
+.noticePage .numlist span {
+    background: #ddd;
+    padding: 5px;
+    display: inline-block;
+}
+.noticePage .numlist a {
+    display: inline-block;
+    padding: 5px;
+    font-size: 12px;
+    width: 26px;
+}
+
+.noticePage .numlist .on, .noticePage .numlist a:hover  {
+    background: darkslategray;
+    color: #fff;
+    border-radius: 50px;
+    
+}
+
+
+
+/* 검색창 */
+.sbox {
+    margin: 70px 10px 30px;
+    text-align: right;
+}
+.sbox select {
+    width: 80px;
+    height: 30px;
+    vertical-align: middle;
+}
+.sbox input[type=text] {
+    height: 30px;
+    width: 250px;
+    text-indent: 1em;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+}
+.sbox input[type=submit] {
+    height: 30px;
+    background: #28BDBE;
+    color: #fff;
+    width: 60px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+

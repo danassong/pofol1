@@ -50,7 +50,7 @@
                 height: 62 + 'px'
             });
             $('.logonav').css({
-                height: 62 + 'px'
+                height: 62 + 'px',
             })
         } else {
             $("header").css({
