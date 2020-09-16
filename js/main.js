@@ -75,13 +75,13 @@
 
         var pofolNear = $('.pofolimg').offset().top - $(this).height()/2
         if (sct >= pofolNear ) {
-            for ( var i = 0; i < $('.pofolimgbox').length; i++) {
-                $('.pofolimgbox').eq(i).css({
-                    animationDelay: i * 0.5 + 's'
+            for ( var i = 0; i < $('.pofolimg a').length; i++) {
+                $('.pofolimg a').eq(i).css({
+                    animationDelay: i * 0.3 + 's'
                 }).addClass('zoomIn')
             }
         } else {
-            ('.pofolimgbox').removeClass('zoomIn')
+            ('.pofolimg a').removeClass('zoomIn')
         }
     })
 
