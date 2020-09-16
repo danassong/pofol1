@@ -45,9 +45,10 @@ header .logonav {
     display: inline-block;
     font-size: 24px;
     color: #fff;
-    padding: 0 15px;
-    top: 80%;
-    transform: translateY(80%);
+    top: 45%;
+    transform: translateY(-45%);
+    padding: 28.5px 15px;
+
 }
 
 .logonav h1 span {
@@ -129,6 +130,7 @@ header .logonav {
     right: 0;
     top: 50%;
     transform: translateY(-50%);
+    padding: 28.5px 0;
 }
 
 .logonav .topmenu a {

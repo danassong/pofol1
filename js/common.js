@@ -50,11 +50,13 @@
                 height: 62 + 'px'
             });
             $('.logonav').css({
-                height: 62 + 'px',
+                paddingTop: 23 + 'px',
+                paddingBottom: 23 + 'px',
+                height: 62 + 'px'
             })
             $('.nav .depth1 > li > a').css({
-                paddingTop = 23 + 'px',
-                paddingBottom = 23 + 'px'
+                paddingTop: 23 + 'px',
+                paddingBottom: 23 + 'px'
             })
         } else {
             $("header").css({
@@ -62,11 +64,14 @@
                 height: 72 + 'px'
             });
             $('.logonav').css({
-                height: 72 + 'px',
-            })
+                paddingTop: 28.5 + 'px',
+                paddingBottom: 28.5 + 'px',
+                height: 72 + 'px'
+            });
+            
             $('.nav .depth1 > li > a').css({
-                paddingTop = 28.5 + 'px',
-                paddingBottom = 28.5 + 'px'
+                paddingTop: 28.5 + 'px',
+                paddingBottom: 28.5 + 'px'
             })
         }
     });
