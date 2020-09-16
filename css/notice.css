@@ -99,38 +99,46 @@
 .noticeTable tbody tr:hover {
     background:#28BDBE;
     color: #fff;
-    cursor: pointer;
 }
 
 .noticePage .numlist {
+    position: relative;
     text-align: center;
-    margin: 30px 0;
+    padding-bottom: 80px;
     font-size: 14px;
+    color: #666;
 }
 .noticePage .numlist span {
-    background: #ddd;
-    padding: 5px;
+    margin: 0 5px;
+    padding: 6px;
     display: inline-block;
+    line-height: 20px;
+    width: 32px;
+    height: 32px;
+    border: 0.8px solid #ccc;
+    vertical-align: middle;
 }
 .noticePage .numlist a {
+    margin: 0 5px;
     display: inline-block;
-    padding: 5px;
+    padding: 6px;
     font-size: 12px;
-    width: 26px;
+    line-height: 20px;
+    width: 32px;
+    height: 32px;
+    border: 0.8px solid #ccc;
+    vertical-align: middle;
 }
 
 .noticePage .numlist .on, .noticePage .numlist a:hover  {
-    background: darkslategray;
-    color: #fff;
-    border-radius: 50px;
-    
+    border-bottom:3px solid #1F8F8F;
 }
 
 
 
 /* 검색창 */
 .sbox {
-    margin: 70px 10px 30px;
+    margin: 70px 0 30px;
     text-align: right;
 }
 .sbox select {
@@ -147,7 +155,7 @@
 }
 .sbox input[type=submit] {
     height: 30px;
-    background: #28BDBE;
+    background: #1F8F8F;
     color: #fff;
     width: 60px;
     vertical-align: middle;

@@ -52,13 +52,21 @@
             $('.logonav').css({
                 height: 62 + 'px',
             })
+            $('.nav .depth1 > li > a').css({
+                paddingTop = 23 + 'px',
+                paddingBottom = 23 + 'px'
+            })
         } else {
             $("header").css({
                 background: 'rgba(0,0,0,0)',
                 height: 72 + 'px'
             });
             $('.logonav').css({
-                height: 72 + 'px'
+                height: 72 + 'px',
+            })
+            $('.nav .depth1 > li > a').css({
+                paddingTop = 28.5 + 'px',
+                paddingBottom = 28.5 + 'px'
             })
         }
     });
