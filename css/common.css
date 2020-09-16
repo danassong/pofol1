@@ -60,11 +60,6 @@ header .logonav {
     transform: translate(-50%, -50%);
 }
 
-.logonav .nav {
-    padding: 27px 0;
-    transition: 1s;
-}
-
 .logonav .nav .depth1 > li {
     display: inline-block;
     position: relative;

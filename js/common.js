@@ -47,37 +47,31 @@
         if (sct >= 200) {
             $("header").css({
                 background: 'rgba(0,0,0,0.5)',
-                height: 62 + 'px'
+                height: '62px'
             });
             $('.logonav h1').css({
-                paddingTop: 16.7 + 'px',
-                paddingBottom: 16.7 + 'px',
+                paddingTop: '16.7px',
+                paddingBottom: '16.7px',
             })
-            $('.logonav .nav').css({
-                paddingTop: 22 + 'px',
-                paddingBottom: 22 + 'px'
-            })
+           
             $('.logonav .topmenu a').css({
-                paddingTop: 25 + 'px',
-                paddingBottom: 25 + 'px',
+                paddingTop: '25px',
+                paddingBottom: '25px',
             })
         } else {
             $("header").css({
                 background: 'rgba(0,0,0,0)',
-                height: 72 + 'px'
+                height: '72px'
             });
             $('.logonav h1').css({
-                paddingTop: 21.7 + 'px',
-                paddingBottom: 21.7 + 'px',
+                paddingTop: '21.7px',
+                paddingBottom: '21.7px',
             });
             
-            $('.logonav .nav').css({
-                paddingTop: 27 + 'px',
-                paddingBottom: 27 + 'px'
-            })
+          
             $('.logonav .topmenu a').css({
-                paddingTop: 30 + 'px',
-                paddingBottom: 30 + 'px',
+                paddingTop: '30px',
+                paddingBottom: '30px',
             })
         }
     });
