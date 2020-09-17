@@ -238,3 +238,28 @@ footer .copyright {
 .goTop:hover {
     transform: translateY(-10%);
 }
+
+
+
+
+@media screen and (max-width: 1240px) {
+
+    .logonav h1 {
+        font-size: 21.6px;
+    }
+    
+    .logonav h1 span {
+        font-size: 10.8px;
+    }
+    
+
+
+    .logonav .nav .depth1 > li > a {
+        font-size: 12.6px;
+        margin: 0 15px;
+    }
+    
+    .logonav .topmenu {
+        font-size: 10px;
+    }
+}
