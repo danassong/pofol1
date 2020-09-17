@@ -1,6 +1,8 @@
 @charset "utf-8";
 
-
+.sitemapPage {
+    margin: 80px 0 40px ;
+}
 .sitemapPage h2 {
     text-align: center;
     font-size: 25px;
@@ -13,16 +15,17 @@
     line-height: 20px;
     font-weight: 600;
     color: #28BDBE;
+    padding: 8px 0;
 }
 .sitemapPage .siteList {
     float: left;
     width: calc(100% - 200px);
     color: #fff;
 }
-.sitemapPage .depth1 > li {
+.sitemapPage .depth1 {
     float: left;
-    width: 25%;
-    height: 150px;
+    width: 33.33%;
+    height: 200px;
 }
 
 .sitemapPage .depth1 span {
@@ -35,4 +38,10 @@
 .sitemapPage .depth2 li {
     font-size: 14px;
     line-height: 1.5;
+    border-left: 2px solid #28BDBE;
+    padding-left: 10px;
+}
+
+.sitemapPage .depth2 li a:hover {
+    text-decoration: underline #fff;
 }
