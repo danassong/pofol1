@@ -660,3 +660,18 @@
     width: 100%;
     text-align: center;
 }
+
+
+
+
+@media screen and (max-width: 1170px) {
+    .mainSec .bloglist .blogul .blogli {
+        float: left;
+        padding: 50px 10px;
+        width: 25%;
+        text-align: center;
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+}

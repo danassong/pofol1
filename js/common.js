@@ -58,6 +58,10 @@
                 paddingTop: '25px',
                 paddingBottom: '25px',
             })
+            $('.open-gnb').css({
+                paddingTop: '22.5px',
+                paddingBottom: '22.5px',
+            })
         } else {
             $("header").css({
                 background: 'rgba(0,0,0,0)',
@@ -69,9 +73,9 @@
             });
             
           
-            $('.logonav .topmenu a').css({
-                paddingTop: '30px',
-                paddingBottom: '30px',
+            $('.open-gnb').css({
+                paddingTop: '27.5px',
+                paddingBottom: '27.5px',
             })
         }
     });
