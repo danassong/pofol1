@@ -32,10 +32,10 @@ header {
     transition: 1s;
 }
 
-header .logonav {
+/* header .logonav {
     position: relative;
     height: 72px;
-}
+} */
 
 .logonav .open_nav,
 .logonav .close_nav {
