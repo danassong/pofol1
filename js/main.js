@@ -20,6 +20,19 @@
 
 
 
+    $('.mainSec a').on('click', function (e) {
+        e.preventDefault()
+        var url = $(this).attr('href')
+        $('#secContainer').remove()
+        $('#secBox').load(url)
+    })
+
+
+
+
+
+
+
     /* 섹션2 블로그 리스트 순차적으로 나타나는 애니메이션 */
     $(window).scroll(function(){
         var sct = $(this).scrollTop()

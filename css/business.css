@@ -1,6 +1,4 @@
 @charset 'utf-8';
-@import 'reset.css';
-@import 'common.css';
 
 body {
     background: #151616;
@@ -39,26 +37,26 @@ body {
     margin-bottom: 100px;
 }
 
-businessSec .subtitle span {
+.businessSec .subtitle span {
     border-bottom: 1px solid #6f6f6f;
     display: inline-block;
     padding-bottom: 1px;
 }
 
-businessSec .explain {
+.businessSec .explain {
     font-size: 14px;
     color: #6f6f6f;
     font-weight: 400;
     line-height: 24px;
 }
 
-businessSec .highlight {
+.businessSec .highlight {
     font-size: 18px;
     line-height: 26px;
     color: #fff;
 }
 
-businessSec .titleh5 {
+.businessSec .titleh5 {
     font-size: 32px;
     line-height: 40px;
     color: #fff;
