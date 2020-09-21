@@ -121,12 +121,12 @@
 
 
         // 이메일 유효성 체크
-        var email = $('#email').val()
-        var emailchk = /^[a-zA-Z0-9]+$/   // 특수문제 제외 
+        var email = $('#email_lbl').val()
+        var emailchk = /^[a-zA-Z0-9]+$/   // 특수문자 제외 
         if ( !emailchk.test(email) ) {
-            alert('이메일 형식이 틀립니다.')
-            $('#email').focus()
-            $('#email').select()
+            alert('이메일 형식에 맞지 않습니다')
+            $('#email_lbl').focus()
+            $('#email_lbl').select()
             return false
         }
 
@@ -134,13 +134,13 @@
         var domain = $('#domain').val()
         var domainchk = /^[a-zA-Z0-9]+[\.][a-z]+$/
         if ( domain.length === 0 ) {
-            alert('도메인을 선택해 주세요.')
-            $('#domainType').focus()
+            alert('도메인을 선택하세요')
+            $('#email_choice').focus()
             return false
         } else {
             if ( !domainchk.test(domain) ) {
-                alert('형식에 맞지 않습니다.')
-                $('#domainType').focus()
+                alert('이메일 형식에 맞지 않습니다')
+                $('#email_choice').focus()
                 return false
             }
         }
