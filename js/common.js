@@ -45,6 +45,7 @@
         
         //헤더 상단
         if (sct >= 200) {
+            // 내리면
             $("header").css({
                 background: 'rgba(0,0,0,0.5)',
                 height: '62px'
@@ -53,7 +54,6 @@
                 paddingTop: '16.7px',
                 paddingBottom: '16.7px',
             })
-           
             $('.logonav .topmenu a').css({
                 paddingTop: '25px',
                 paddingBottom: '25px',
@@ -62,7 +62,11 @@
                 paddingTop: '22.5px',
                 paddingBottom: '22.5px',
             })
+            $('.logonav .nav .depth2').css({
+                top: '92%'
+            })
         } else {
+            // 상단 탑
             $("header").css({
                 background: 'rgba(0,0,0,0)',
                 height: '72px'
@@ -71,11 +75,16 @@
                 paddingTop: '21.7px',
                 paddingBottom: '21.7px',
             });
-            
-          
+            $('.logonav .topmenu a').css({
+                paddingTop: '30px',
+                paddingBottom: '30px',
+            })
             $('.open-gnb').css({
                 paddingTop: '27.5px',
                 paddingBottom: '27.5px',
+            })
+            $('.logonav .nav .depth2').css({
+                top: '100%'
             })
         }
     });

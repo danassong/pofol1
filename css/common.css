@@ -71,12 +71,15 @@ header {
     font-size: 14px;
     font-weight: bold;
     margin: 0 20px;
+    padding: 28px 0 ;
 }
 
 .logonav .nav .depth2 {
+    /* position: absolute;
+    top: 200%;
+    left: 0; */
     position: absolute;
     top: 100%;
-    left: 0;
     min-width: 220px;
     background: rgba(35,35,35,1);
     color: #9d9d9d;
@@ -84,6 +87,7 @@ header {
     padding: 13px 0 15px;
     font-size: 13px;
     display: none;
+    transition: 1s;
 }
 
 .logonav .nav .depth2 li {
