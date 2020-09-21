@@ -124,7 +124,7 @@
         var email = $('#email_lbl').val()
         var emailchk = /^[a-zA-Z0-9]+$/   // 특수문자 제외 
         if ( !emailchk.test(email) ) {
-            alert('이메일 형식에 맞지 않습니다')
+            alert('이메일을 입력하세요')
             $('#email_lbl').focus()
             $('#email_lbl').select()
             return false
@@ -148,5 +148,29 @@
         return false
     })
 
+
+
+    // 이메일 도메인 선택을 변경(change())했을때 변경한 내용으로 채우기
+    $('#email_choice').on('change', function(){
+        $('#email_choice option:selected').each(function(){
+            if( $(this).val()==='title' ) {
+                $('#domain').val('')
+                $('#domain').attr('disabled', true)
+            } else if ( $(this).val()==='self' ) {
+                $('#domain').val('')
+                $('#domain').attr('disabled', false)
+            } else {
+                $('#domain').val( $(this).val() )
+                $('#domain').attr('disabled', true)
+            }
+        })
+    })
+
+
+
+
+
+
+
     return false
-})
+})(jQuery)

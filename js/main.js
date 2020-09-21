@@ -32,7 +32,7 @@
                     animationDelay: i * 0.3 + 's'
                 }).addClass('fadeInUp')
             }
-        } else {
+        } else if (sct === 0) {
             $('.blogul .blogli').removeClass('fadeInUp')
         }
 
@@ -45,7 +45,7 @@
 
             if (sct >= secNear) {
                 $(this).addClass('on')
-            } else {
+            } else if (sct === 0) {
                 $(this).removeClass('on')
             }
         })
@@ -58,7 +58,7 @@
                     animationDelay: i * 0.3 + 's'
                 }).addClass('fadeInRight')
             }
-        } else {
+        } else if (sct === 0) {
             $('.process').removeClass('fadeInRight')
             $('.sectitle').removeClass('fadeInUp')
         }
@@ -67,7 +67,7 @@
         var readNear = $('.readwrap').offset().top - $(this).height()/2
         if (sct >= readNear) {
             $('.readwrap').addClass('on')
-        } else {
+        } else if (sct === 0) {
             $('.readwrap').removeClass('on')
         }
 
@@ -80,7 +80,7 @@
                     animationDelay: i * 0.3 + 's'
                 }).addClass('zoomIn')
             }
-        } else {
+        } else if (sct === 0) {
             ('.pofolimg a').removeClass('zoomIn')
         }
     })
