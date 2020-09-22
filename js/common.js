@@ -145,7 +145,7 @@
 
 
 
-        var img4Near = $('#img4arr').offset().top - $(this).height()/2
+        var img4Near = $('#img4arr').offset().top - $(this).height()/1.5
 
         if (sct >= img4Near) {
             for ( var i = 0; i < $('#img4arr a').length; i++) {
