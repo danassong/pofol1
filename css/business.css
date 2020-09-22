@@ -45,11 +45,6 @@ body {
     margin-bottom: 15px;
     font-weight: normal;
     text-align: center;
-    opacity: 0;
-}
-.businessSec #seccol3 .title.fadeIn {
-    animation-duration: 1s;
-    animation-fill-mode: both;
 }
 
 .businessSec #seccol3 .subtitle {
@@ -72,7 +67,14 @@ body {
     color: #6f6f6f;
     font-weight: 400;
     line-height: 24px;
+    opacity: 0;
 }
+
+.businessSec #seccol3 .explain.fadeIn {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
 
 .businessSec .highlight {
     font-size: 18px;
@@ -110,11 +112,29 @@ body {
     float: left;
     width: 33.3333%;
     padding: 130px 15px;
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+}
+
+#img3arr div.fadeInUp {
+    animation-duration: 1s;
+    animation-fill-mode: both;
 }
 
 #seccol2 {
     padding: 130px 0;
     position: relative;
+}
+
+#seccol2 div {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+}
+#seccol2 div.fadeInUp {
+    animation-duration: 1s;
+    animation-fill-mode: both;
 }
 
 #seccol2 .titleh5h6 {
@@ -129,6 +149,10 @@ body {
 }
 
 #seccol2 .explain {
+    font-size: 14px;
+    color: #6f6f6f;
+    font-weight: 400;
+    line-height: 24px;
     margin-left: 8.33%;
     padding: 0 15px;
     float: left;
@@ -159,7 +183,15 @@ body {
     position: relative;
     overflow: hidden;
     margin: 100px auto 0;
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
 }
+#seccol1 .pofolimg.fadeInUp {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
 
 #img4arr a {
     float: left;
@@ -167,6 +199,14 @@ body {
     position: relative;
     transition: 0.5s;
     overflow: hidden;
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+}
+
+#img4arr a.fadeInUp {
+    animation-duration: 1s;
+    animation-fill-mode: both;
 }
 
 #img4arr .overlay {

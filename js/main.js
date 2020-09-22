@@ -96,8 +96,12 @@
         } else if (sct === 0) {
             ('.pofolimg a').removeClass('zoomIn')
         }
-    })
 
+
+
+
+
+    })
 
 
     
