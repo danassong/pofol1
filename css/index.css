@@ -43,6 +43,8 @@
     overflow: hidden;
 }
 
+
+
 .mainSec .slideinner .slide:before {
     position: absolute;
     top: 0;
@@ -65,6 +67,45 @@
     background-image: url(../images/main03.jpg);
 }
 
+.mainSec .slideinner .slide1.slick-active {
+    animation: zoomOutmain 5s both;
+}
+.mainSec .slideinner .slide2.slick-active {
+    animation: zoomOutmain 5s both;
+}
+.mainSec .slideinner .slide3.slick-active {
+    animation: zoomOutmain 5s both;
+}
+
+@-webkit-keyframes zoomOutmain {
+  from {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes zoomOutmain {
+  from {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+
+
+
+
+
 /* 슬라이드 화살표 */
 
 /* .slideouter .marrow {
@@ -85,7 +126,7 @@
 
 
 
-.mainSec .slide .text {
+.mainSec .text {
     text-align: center;
     color: #fff;
     position: absolute;
@@ -94,23 +135,23 @@
     transform: translate(-50%, -50%);
 }
 
-.mainSec .slide .text h6 {
+.mainSec .text h6 {
     font-size: 25px;
     line-height: 30px;
     font-weight: normal;
     padding-bottom: 20px;
 }
 
-.mainSec .slide .text h2 {
+.mainSec .text h2 {
     font-size: 120px;
     line-height: 110px;
 }
 
-.mainSec .slide .text h2 span {
+.mainSec .text h2 span {
     color: #28BDBE;
 }
 
-.mainSec .slide .text a {
+.mainSec .text a {
     border: 1.5px solid #fff;
     padding: 10px 25px;
     color: #fff;
@@ -121,7 +162,7 @@
     display: inline-block;
 }
 
-.mainSec .slide .text a:hover {
+.mainSec .text a:hover {
     background: #fff;
     color: #232323;
 }
@@ -307,6 +348,9 @@
 
 .mainSec .skyblue ul li h3 {
     font-size: 48px;
+}
+.mainSec .skyblue ul li h3 p {
+    display: inline-block;
 }
 
 .mainSec .skyblue ul li span {
@@ -647,7 +691,7 @@
 .introAni {
     position: fixed;
     top: 0; left: 0; bottom: 0; right: 0;
-    background: #000;
+    background: rgba(0, 0, 0, 0.85);
     color: #fff;
     font-size: 50px;
     z-index: 9999999999999999;
