@@ -1,25 +1,4 @@
 @charset 'utf-8';
-/* @import 'reset.css';
-@import 'common.css'; */
-
-/* body, html {
-    height: 100%;
-} */
-
-/* #secBox {
-    height: 100%;
-} */
-
-/* #secContainer {
-    height: 100%;
-} */
-/* .mainSec {
-    height: 100%;
-} */
-
-/* .mainSec #mainslide {
-    height: 100%;
-} */
 
 #mainslide {
     width: 100%;
@@ -36,16 +15,9 @@
 
 .mainSec .slideinner .slide {
     position: relative;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    height: 732px;
-    overflow: hidden;
 }
 
-
-
-.mainSec .slideinner .slide:before {
+.mainSec .slideinner .slide .img:before {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -54,26 +26,27 @@
     content: '';
     background: rgba(0, 0, 0, 0.5);
 }
+.mainSec .slideinner .slide .img {
+    height: 732px;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
 
-.mainSec .slideinner .slide1 {
+.mainSec .slideinner .slide1 .img {
     background-image: url(../images/main01.jpg);
 }
 
-.mainSec .slideinner .slide2 {
+.mainSec .slideinner .slide2 .img {
     background-image: url(../images/main02.jpg);
 }
 
-.mainSec .slideinner .slide3 {
+.mainSec .slideinner .slide3 .img {
     background-image: url(../images/main03.jpg);
 }
 
-.mainSec .slideinner .slide1.slick-active {
-    animation: zoomOutmain 5s both;
-}
-.mainSec .slideinner .slide2.slick-active {
-    animation: zoomOutmain 5s both;
-}
-.mainSec .slideinner .slide3.slick-active {
+.mainSec .slideinner .slide.slick-active .img {
     animation: zoomOutmain 5s both;
 }
 
