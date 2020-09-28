@@ -326,8 +326,8 @@ footer .copyright {
 @media only screen and (max-width: 992px) {
     footer .infofirst,
     footer .infodetail {
-        margin-right: 120px;
-        margin-left: 120px;
+        margin-right: 100px;
+        margin-left: 100px;
     }
     footer .info {
         float: left;
@@ -348,5 +348,44 @@ footer .copyright {
         float: right;
         width: 45%;
         text-align: right;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    footer .infofirst,
+    footer .infodetail {
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+    footer .info {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    footer .logo h3 {
+        float: none;
+        width: 100%;
+        text-align: center;
+        padding-bottom: 30px;
+        display: block;
+    }
+    footer .address {
+        padding-bottom: 30px;
+    }
+    footer .infodetail {
+        font-size: 11px;
+    }
+    footer .infodetail p {
+        float: none;
+        width: 100%;
+        text-align: center;
+
+    }
+    
+    footer .copyright {
+        float: none;
+        width: 100%;
+        display: block;
+        text-align: center;
     }
 }
