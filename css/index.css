@@ -254,13 +254,13 @@
     border: 0.5px solid #666;
 }
 
-.mainSec .bloglist .listdetail .hrblue {
+.mainSec .bloglist .listdetail hr:before {
     position: absolute;
     width: 30%;
-    border: 0.5px solid #28BDBE;
-    top: 25.1%;
     left: 50%;
-    transform: translate(-50%, -25.1%);
+    transform: translateX(-50%);
+    border: 0.5px solid #28BDBE;
+    content: '';    
 }
 
 .mainSec .bloglist .listdetail h4:hover {
@@ -311,6 +311,9 @@
     opacity: 0.75;
 }
 
+.mainSec .skyblue ul {
+    position: relative;
+}
 .mainSec .skyblue ul li {
     float: left;
     padding: 130px 0;
@@ -596,6 +599,7 @@
     width: 50%;
     height: 420px;
     position: relative;
+    background-position: center;
 }
 
 .mainSec #promote .partwrap > div:last-of-type {
@@ -604,6 +608,7 @@
     width: 50%;
     height: 420px;
     position: relative;
+    background-position: center;
 }
 
 .mainSec .part:before {

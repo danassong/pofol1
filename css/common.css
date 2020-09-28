@@ -37,7 +37,10 @@ header {
     height: 72px;
 } */
 
-.logonav .open_gnb {
+.logonav .open_nav {
+    display: none;
+}
+.logonav .close_nav {
     display: none;
 }
 
@@ -245,7 +248,7 @@ footer .copyright {
 
 
 
-@media screen and (max-width: 1240px) {
+@media only screen and (max-width: 1240px) {
 
     .logonav h1 {
         font-size: 21.6px;
@@ -272,40 +275,14 @@ footer .copyright {
         left: 50%;
         transform: translateX(-50%);
     }
-    #header .logonav .open-gnb {
+    #header .logonav .open_nav {
         display: block;
         left: 50px;
-        width: 25px;
+        font-size: 20px;
         height: 17px;
         padding: 27.5px 0 ;
+        color: #fff;
         transition: 1s;
-    }
-
-    #header .logonav .open-gnb span {
-        display: block;
-        width: 25px;
-        height: 3px;
-        background: #fff;
-        margin-bottom: 4px;
-        border-radius: 10px;
-        transition: all 0.5s;
-    }
-    #header.on .logonav .open-gnb span:nth-last-of-type(2) {
-        display: none;
-    }
-    #header.on .logonav .open-gnb span:nth-last-of-type(1) {
-        transform: rotate(45deg);
-        position: absolute;
-        top: 50%; left: 0;
-    }
-    #header.on .logonav .open-gnb span:nth-last-of-type(3) {
-        transform: rotate(-45deg);
-        position: absolute;
-        top: 50%; left: 0;
-    }
-
-    #header .topmenu {
-        opacity: 0;
     }
 
     #header .nav {
@@ -339,5 +316,37 @@ footer .copyright {
     #header .nav .depth1 > li:nth-child(1) > a,
     #header .nav .depth1 > li:nth-child(3) > a {
         border-right: none;
+    }
+
+    #header .topmenu {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    footer .infofirst,
+    footer .infodetail {
+        margin-right: 120px;
+        margin-left: 120px;
+    }
+    footer .info {
+        float: left;
+        width: 50%;
+    }
+    footer .logo {
+        float: left;
+        width: 100%;
+        padding-bottom: 30px;
+    }
+
+    footer .infodetail p {
+        float: left;
+        width: 55%;
+    }
+    
+    footer .copyright {
+        float: right;
+        width: 45%;
+        text-align: right;
     }
 }

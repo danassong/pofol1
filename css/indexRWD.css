@@ -1,0 +1,179 @@
+@charset 'utf-8';
+
+
+@media only screen and (max-width: 992px) {
+
+    /* section 0 slide */
+    .mainSec .text h6 {
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: normal;
+        padding-bottom: 20px;
+    }
+    .mainSec .text h2 {
+        font-size: 80px;
+        line-height: 75px;
+    }
+
+
+
+    /* section 1 blog */
+    .mainSec #blog .bloglist {
+        position: relative;
+        padding: 0 15px;
+        /* height: 700px; */
+        margin-right: 70px;
+        margin-left: 70px;
+    }
+    .mainSec .bloglist .blogul .blogli {
+        float: left;
+        padding: 50px 10px;
+        width: 50%;
+        text-align: center;
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+
+
+    /* section 2 skyblue */
+    .mainSec .skyblue {
+        position: relative;
+        height: 220px;
+    }
+    .mainSec .skyblue ul li {
+        float: left;
+        padding: 80px 0;
+        width: 25%;
+    }
+    .mainSec .skyblue ul li h3 {
+        font-size: 36px;
+    }
+    .mainSec .skyblue ul li span {
+        font-size: 14px;
+    }
+
+
+    /* section 3 process */
+    .mainSec #workprocess {
+        padding: 70px 0;
+        background: #151616;
+        margin-right: 70px;
+        margin-left: 70px;
+    }
+    .mainSec .process {
+        width: 50%;
+        float: left;
+        text-align: center;
+        padding: 0 10px 30px;
+        opacity: 0;
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
+    }
+
+
+
+    /* section 4 read */
+    .mainSec .readwrap img:first-of-type {
+        float: none;
+        width: 100%;
+        height: 444px;
+        opacity: 0;
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+    
+    .mainSec .readwrap img:last-of-type {
+        float: none;
+        width: 100%;
+        height: 444px;
+        opacity: 0;
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
+    }
+    .mainSec .readwrap .readmore {
+        color: #939393;
+        width: 100%;
+        height: 380px;
+        padding: 9%;
+        vertical-align: middle;
+        text-align: center;
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+
+
+    /* section 5 portfolio */
+    .mainSec #pofolsec {
+        background: #151616;
+        padding: 130px 0;
+        margin-right: 70px;
+        margin-left: 70px;
+    }
+    .mainSec .pofolimg > div {
+        position: relative;
+        width: 50%;
+        float: left;
+        padding: 7px 7px;
+    }
+
+
+    /* section 6 promote */
+    .mainSec #promote .partwrap > div:first-of-type {
+        float: none;
+        width: 100%;
+        height: 350px;
+        position: relative;
+    }
+    
+    .mainSec #promote .partwrap > div:last-of-type {
+        float: none;
+        width: 100%;
+        height: 350px;
+        position: relative;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .mainSec #blog .bloglist {
+        position: relative;
+        padding: 0 15px;
+        /* height: 700px; */
+        margin-right: 70px;
+        margin-left: 70px;
+    }
+    .mainSec .bloglist .blogul .blogli {
+        float: left;
+        padding: 20px 10px;
+        width: 100%;
+        text-align: center;
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+    .mainSec .bloglist .listdetail hr {
+        width: 30%;
+        margin: 20px auto;
+        border: 0.5px solid #666;
+    }
+    .mainSec .bloglist .listdetail hr:before {
+        position: absolute;
+        width: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+        border: 0.5px solid #28BDBE;
+        content: '';    
+    }
+    .mainSec .bloglist .listdetail p {
+        color: #939393;
+        font-size: 12px;
+        line-height: 20px;
+        margin-bottom: 20px;
+        margin-right: 150px;
+        margin-left: 150px;
+    }
+
+
+}
