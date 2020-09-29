@@ -24,11 +24,11 @@
 
     function init() {
         var ww = $(window).width()
-        if (ww > 767 && flag) {
+        if (ww > 1055 && flag) {
             $('.logoNav .nav').show()
             $('.open_nav, .close_nav').hide()
             flag = false
-        } else if (ww <= 767 && !flag) {
+        } else if (ww <= 1055 && !flag) {
             $('.open_nav').show()
             $('.logoNav .nav').hide()
             flag = true
@@ -41,14 +41,14 @@
     })
 
     // nav 햄버거 버튼
-    $('.logoNav .open_nav').on('click', function () {
+    $('#header .logonav .open_nav').on('click', function () {
         $(this).next().stop().slideDown(300)
         $(this).hide()
         $(this).nextAll('.close_nav').css({
             display: 'block'
         })
     })
-    $('.logoNav .close_nav').on('click', function () {
+    $('#header .logonav .close_nav').on('click', function () {
         $(this).prev().stop().slideUp(300)
         $(this).hide()
         $(this).prevAll('.open_nav').css({
@@ -99,13 +99,14 @@
                 paddingTop: '25px',
                 paddingBottom: '25px',
             })
-            $('.open_nav').css({
-                paddingTop: '22.5px',
-                paddingBottom: '22.5px',
+            $('.open_nav i').css({
+                paddingTop: '19.3px',
+                paddingBottom: '19.3px',
             })
             $('.logonav .nav .depth2').css({
                 top: '92%'
             })
+            
         } else {
             // 상단 탑
             $("header").css({
@@ -120,13 +121,14 @@
                 paddingTop: '30px',
                 paddingBottom: '30px',
             })
-            $('.open_nav').css({
-                paddingTop: '27.5px',
-                paddingBottom: '27.5px',
+            $('.open_nav i').css({
+                paddingTop: '25px',
+                paddingBottom: '25px',
             })
             $('.logonav .nav .depth2').css({
                 top: '100%'
             })
+            
         }
 
 

@@ -50,6 +50,7 @@ header {
     color: #fff;
     padding: 21.7px 15px;
     transition: 1s;
+    margin: 0 50px;
 }
 
 .logonav h1 span {
@@ -60,8 +61,8 @@ header {
     position: absolute;
     top: 50%; left: 50%;
     transform: translate(-50%, -50%);
+    transition: 1s;
 }
-
 .logonav .nav .depth1 > li {
     display: inline-block;
     position: relative;
@@ -69,7 +70,7 @@ header {
 
 .logonav .nav .depth1 > li > a {
     position: relative;
-    display: block;
+    display: inline-block;
     color: #fff;
     font-size: 14px;
     font-weight: bold;
@@ -78,9 +79,6 @@ header {
 }
 
 .logonav .nav .depth2 {
-    /* position: absolute;
-    top: 200%;
-    left: 0; */
     position: absolute;
     top: 100%;
     min-width: 220px;
@@ -123,6 +121,7 @@ header {
     font-size: 11px;
     text-align: right;
     float: right;
+    margin: 0 50px;
 }
 
 .logonav .topmenu a {
@@ -274,48 +273,52 @@ footer .copyright {
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
+        margin: 0 auto;
+    }
+    #header .logonav i {
+        font-size: 20px;
+        padding: 25px 0 ;
+        color: #fff;
+        transition: 1s;
+        z-index:9999;
+        margin: 0 50px;
     }
     #header .logonav .open_nav {
         display: block;
-        left: 50px;
-        font-size: 20px;
-        height: 17px;
-        padding: 27.5px 0 ;
-        color: #fff;
-        transition: 1s;
+    }
+    #header .logonav .close_nav {
+        display: none;
     }
 
-    #header .nav {
+
+    .logonav .navwrap {
+        display: none;
         position: absolute;
+        top: 100%; left: 0%;
+        transform: translate(0%, 0%);
+        z-index:999999;
         width: 100%;
-        top: 100%; right: 0;
-        transform: translateY(0%);
-        text-align: center;
-        background: rgba(0,0,0,1);
-        opacity: 0;
-    }
-    #header.on .nav {
-        opacity: 1;
+        background: rgba(0, 0, 0, 0.9);
     }
     #header .nav .depth1 > li {
         display: block;
         float: left;
         width: 50%;
+        padding: 0 20px;
     }
-    #header .nav .depth1 > li > a {
-        font-size: 18px;
-        color: #fff;
-        padding: 20px 20px;
+    .logonav .nav .depth1 > li > a {
+        position: relative;
         display: block;
-        border: solid #fff;
+        color: #fff;
+        font-size: 14px;
+        font-weight: bold;
+        margin: 0 30px;
+        padding: 28px 0 ;
     }
-    #header .nav .depth1 > li:nth-child(1) > a,
-    #header .nav .depth1 > li:nth-child(2) > a{
-        border-bottom: none;
-    }
-    #header .nav .depth1 > li:nth-child(1) > a,
-    #header .nav .depth1 > li:nth-child(3) > a {
-        border-right: none;
+    #header .nav .depth1 > li:nth-child(3),
+    #header .nav .depth1 > li:nth-child(4) {
+        border-top: 1px solid #666;
+        border-bottom: 4px solid #28BDBE;
     }
 
     #header .topmenu {
@@ -352,6 +355,25 @@ footer .copyright {
 }
 
 @media only screen and (max-width: 768px) {
+    #header .nav .depth1 > li {
+        display: block;
+        float: left;
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    #header .nav .depth1 > li:nth-child(3) {
+        border-bottom: none;
+    }
+    #header .nav .depth1 > li:nth-child(2),
+    #header .nav .depth1 > li:nth-child(3),
+    #header .nav .depth1 > li:nth-child(4) {
+        border-top: 1px solid #666;
+    }
+
+
+
+
     footer .infofirst,
     footer .infodetail {
         margin-right: 50px;
