@@ -79,6 +79,13 @@
         var url = $(this).attr('href')
         $('#secContainer').remove()
         $('#secBox').load(url)
+
+        $('.navwrap').stop().slideUp(300)
+        $('#header .logonav .close_nav').hide()
+        $('#header .logonav .open_nav').css({
+            display: 'block'
+        })
+
     })
 
     $('.topmenu > a').on('click', function (e) {
