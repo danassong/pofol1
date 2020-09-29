@@ -120,8 +120,8 @@
                 paddingBottom: '25px',
             })
             $('.open_nav i, .close_nav i').css({
-                paddingTop: '19.3px',
-                paddingBottom: '19.3px',
+                paddingTop: '21px',
+                paddingBottom: '21px',
             })
             $('.logonav .nav .depth2').css({
                 top: '92%'

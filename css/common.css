@@ -51,6 +51,10 @@ header {
     padding: 21.7px 15px;
     transition: 1s;
     margin: 0 50px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
 }
 
 .logonav h1 span {
@@ -60,8 +64,7 @@ header {
 .logonav .navwrap {
     position: absolute;
     top: 50%; left: 50%;
-    transform: translate(-50%, -50%);
-    /* transition: 1s; */
+    transform: translate(-50%, -50%);    
 }
 .logonav .nav .depth1 > li {
     display: inline-block;
@@ -122,6 +125,10 @@ header {
     text-align: right;
     float: right;
     margin: 0 50px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
 }
 
 .logonav .topmenu a {
@@ -270,10 +277,11 @@ footer .copyright {
     }
     #header .logonav h1 {
         float: none;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
         margin: 0 auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
     #header .logonav i {
         font-size: 20px;
