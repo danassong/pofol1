@@ -61,7 +61,7 @@ header {
     position: absolute;
     top: 50%; left: 50%;
     transform: translate(-50%, -50%);
-    transition: 1s;
+    /* transition: 1s; */
 }
 .logonav .nav .depth1 > li {
     display: inline-block;
@@ -88,8 +88,8 @@ header {
     padding: 13px 0 15px;
     font-size: 13px;
     display: none;
-    transition: 1s;
-}
+/*     transition: 1s;
+ */}
 
 .logonav .nav .depth2 li {
     padding: 0 28px;
@@ -277,7 +277,7 @@ footer .copyright {
     }
     #header .logonav i {
         font-size: 20px;
-        padding: 25px 0 ;
+        padding: 26px 0 ;
         color: #fff;
         transition: 1s;
         z-index:9999;
@@ -287,6 +287,9 @@ footer .copyright {
         display: block;
     }
     #header .logonav .close_nav {
+        display: none;
+    }
+    .logonav .nav .depth1 > li:hover .depth2 {
         display: none;
     }
 
@@ -326,7 +329,7 @@ footer .copyright {
     }
 
     .logonav .nav .depth2 {
-        position: absolute;
+        position: static;
         top: 100%;
         width: 100%;
         background: rgba(35,35,35,1);
@@ -335,7 +338,7 @@ footer .copyright {
         padding: 13px 0 15px;
         font-size: 13px;
         display: none;
-        transition: 1s;
+        /* transition: 1s; */
     }
 
 

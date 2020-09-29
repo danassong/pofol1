@@ -4,8 +4,15 @@
 @media only screen and (max-width: 992px) {
 
     /* section 0 slide */
+    .mainSec .slideinner .slide .img {
+        height: 600px;
+        overflow: hidden;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
     .mainSec .text h6 {
-        font-size: 20px;
+        font-size: 18px;
         line-height: 30px;
         font-weight: normal;
         padding-bottom: 20px;

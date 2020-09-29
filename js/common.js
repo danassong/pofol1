@@ -59,11 +59,11 @@
 
 
     /* nav 아코디언 */
-    $('.logonav .nav .depth2').on('click', function() {
-        $(this).parent().next().stop().slideToglle(300)
-        $(this).parent().siblings('li .depth2').next().each(function() {
-            if ($(this).css('display') === 'block' ) {
-                $(this).slideUp(300)
+    $('.logonav .nav .depth1 > li').on('click', function() {
+        $(this).find('.depth2').stop().slideToggle(300)
+        $(this).siblings().each(function() {
+            if ($(this).find('.depth2').css('display') === 'block' ) {
+                $(this).find('.depth2').slideUp(300)
             }
         })
 
@@ -112,7 +112,7 @@
                 paddingTop: '25px',
                 paddingBottom: '25px',
             })
-            $('.open_nav i').css({
+            $('.open_nav i, .close_nav i').css({
                 paddingTop: '19.3px',
                 paddingBottom: '19.3px',
             })
@@ -134,9 +134,9 @@
                 paddingTop: '30px',
                 paddingBottom: '30px',
             })
-            $('.open_nav i').css({
-                paddingTop: '25px',
-                paddingBottom: '25px',
+            $('.open_nav i, .close_nav i').css({
+                paddingTop: '26px',
+                paddingBottom: '26px',
             })
             $('.logonav .nav .depth2').css({
                 top: '100%'
