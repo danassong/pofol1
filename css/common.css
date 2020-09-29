@@ -343,8 +343,27 @@ footer .copyright {
 
 
 
-    #header .topmenu {
+    #header .topmenu :nth-child(3) {
         display: none;
+    }
+    .logonav .topmenu {
+        color: #fff;
+        font-weight: 700;
+        font-size: 11px;
+        text-align: right;
+        float: none;
+        margin: 0 50px;
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+    }
+    
+    .logonav .topmenu a {
+        padding: 0px 10px;
+        display: inline-block;
+        transition: 1s;
     }
 }
 
