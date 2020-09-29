@@ -303,7 +303,7 @@ footer .copyright {
     #header .nav .depth1 > li {
         display: block;
         float: left;
-        width: 50%;
+        width: 100%;
         padding: 0 20px;
     }
     .logonav .nav .depth1 > li > a {
@@ -315,11 +315,30 @@ footer .copyright {
         margin: 0 30px;
         padding: 28px 0 ;
     }
+    
+    #header .nav .depth1 > li:nth-child(2),
     #header .nav .depth1 > li:nth-child(3),
     #header .nav .depth1 > li:nth-child(4) {
         border-top: 1px solid #666;
+    }
+    #header .nav .depth1 > li:nth-child(4) {
         border-bottom: 4px solid #28BDBE;
     }
+
+    .logonav .nav .depth2 {
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        background: rgba(35,35,35,1);
+        color: #9d9d9d;
+        text-align: left;
+        padding: 13px 0 15px;
+        font-size: 13px;
+        display: none;
+        transition: 1s;
+    }
+
+
 
     #header .topmenu {
         display: none;
@@ -362,14 +381,7 @@ footer .copyright {
         padding: 0 20px;
     }
 
-    #header .nav .depth1 > li:nth-child(3) {
-        border-bottom: none;
-    }
-    #header .nav .depth1 > li:nth-child(2),
-    #header .nav .depth1 > li:nth-child(3),
-    #header .nav .depth1 > li:nth-child(4) {
-        border-top: 1px solid #666;
-    }
+    
 
 
 

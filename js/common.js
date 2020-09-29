@@ -58,6 +58,19 @@
 
 
 
+    /* nav 아코디언 */
+    $('.logonav .nav .depth2').on('click', function() {
+        $(this).parent().next().stop().slideToglle(300)
+        $(this).parent().siblings('li .depth2').next().each(function() {
+            if ($(this).css('display') === 'block' ) {
+                $(this).slideUp(300)
+            }
+        })
+
+        return false
+    })
+
+
     /* PAGE 로드 분리 */
     $('#secBox').load('main.html')
 
