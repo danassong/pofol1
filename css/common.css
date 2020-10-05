@@ -476,4 +476,30 @@ footer .copyright {
     #header .topmenu :nth-child(2) {
         display: none;
     }
+
+    footer .logo {
+        float: left;
+        width: 100%;
+        padding-bottom: 0px;
+    }
+    footer .logo h3 {
+        font-size: 20px;
+        float: none;
+        width: 100%;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        display: block;
+    }
+    footer .notice {
+        display: none;
+    }
+    footer .address {
+        padding-bottom: 10px;
+    }
+    footer .infofirst {
+        display: inline-block;
+        padding-bottom: 20px;
+        border-bottom: 0.5px solid #6f6f6f;
+    }
 }
