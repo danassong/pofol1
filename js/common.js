@@ -41,24 +41,27 @@
     })
 
     // nav 햄버거 버튼
-    $('#header .logonav .open_nav').on('click', function () {
-        $(this).next().stop().slideDown(300)
-        $(this).hide()
-        $(this).nextAll('.close_nav').css({
-            display: 'block'
+    
+        $('#header .logonav .open_nav').on('click', function () {
+            $(this).next().stop().slideDown(300)
+            $(this).hide()
+            $(this).nextAll('.close_nav').css({
+                display: 'block'
+            })
         })
-    })
-    $('#header .logonav .close_nav').on('click', function () {
-        $(this).prev().stop().slideUp(300)
-        $(this).hide()
-        $(this).prevAll('.open_nav').css({
-            display: 'block'
+        $('#header .logonav .close_nav').on('click', function () {
+            $(this).prev().stop().slideUp(300)
+            $(this).hide()
+            $(this).prevAll('.open_nav').css({
+                display: 'block'
+            })
         })
-    })
+    
 
 
 
     /* nav 아코디언 */
+
     $('.logonav .nav .depth1 > li').on('click', function() {
         $(this).find('.depth2').stop().slideToggle(300)
         $(this).siblings().each(function() {

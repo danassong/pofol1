@@ -477,7 +477,7 @@
     margin-bottom: 25px;
 }
 
-.mainSec .readwrap .readmore span {
+.mainSec .readwrap .readmore a span {
     font-size: 11px;
     padding: 10px 24px;
     padding-left: 40px;

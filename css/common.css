@@ -412,10 +412,6 @@ footer .copyright {
     }
 
     
-
-
-
-
     footer .infofirst,
     footer .infodetail {
         margin-right: 50px;
@@ -451,5 +447,33 @@ footer .copyright {
         width: 100%;
         display: block;
         text-align: center;
+    }
+}
+
+
+@media only screen and (max-width: 450px) {
+    #header .logonav i {
+        font-size: 20px;
+        padding: 26px 0 ;
+        color: #fff;
+        transition: 1s;
+        z-index:9999;
+        margin: 0 30px;
+    }
+    .logonav .topmenu {
+        color: #fff;
+        font-weight: 700;
+        font-size: 11px;
+        text-align: right;
+        float: none;
+        margin: 0 30px;
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+    }
+    #header .topmenu :nth-child(2) {
+        display: none;
     }
 }
