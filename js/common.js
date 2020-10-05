@@ -25,12 +25,12 @@
     function init() {
         var ww = $(window).width()
         if (ww > 1055 && flag) {
-            $('.logoNav .nav').show()
-            $('.open_nav, .close_nav').hide()
+            $('.logonav .navwrap').show()
+            $('.open_nav, .close_nav, .depth2').hide()
             flag = false
         } else if (ww <= 1055 && !flag) {
             $('.open_nav').show()
-            $('.logoNav .nav').hide()
+            $('.logonav .navwrap').hide()
             flag = true
         }
     }
