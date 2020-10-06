@@ -98,6 +98,13 @@
         -webkit-transform: translate3d(100%, 0, 0);
         transform: translate3d(100%, 0, 0);
     }
+    .mainSec .process p {
+        font-size: 14px;
+        color: #6f6f6f;
+        line-height: 24px;
+        margin-bottom: 25px;
+        margin: 0 10px;
+    }
 
 
 
