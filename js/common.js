@@ -24,14 +24,21 @@
 
     function init() {
         var ww = $(window).width()
-        if (ww > 1055 && flag) {
-            $('.logonav .navwrap').show()
-            $('.open_nav, .close_nav, .depth2').hide()
-            flag = false
-        } else if (ww <= 1055 && !flag) {
-            $('.open_nav').show()
-            $('.logonav .navwrap').hide()
-            flag = true
+        if (ww > 1055) {
+            $('html').addClass('pc').removeClass('mobile')
+            if(flag) {
+                $('.logonav .navwrap').show()
+                $('.depth1 > li').removeClass('on')
+                $('.open_nav, .close_nav, .depth2').hide()
+                flag = false
+            }
+        } else if (ww <= 1055) {
+            $('html').addClass('mobile').removeClass('pc')
+            if (!flag) {
+                $('.open_nav').show()
+                $('.logonav .navwrap').hide()
+                flag = true
+            }
         }
     }
 
@@ -60,18 +67,35 @@
 
 
 
-    /* nav 아코디언 */
+    /* 모바일 화면에서 nav 아코디언 */
 
     $('.logonav .nav .depth1 > li').on('click', function() {
-        $(this).find('.depth2').stop().slideToggle(300)
-        $(this).siblings().each(function() {
-            if ($(this).find('.depth2').css('display') === 'block' ) {
-                $(this).find('.depth2').slideUp(300)
-            }
-        })
-
-        return false
+        if ( $('html').hasClass('mobile') ) {
+            $(this).toggleClass('on')
+            $(this).find('.depth2').stop().slideToggle(300)
+            $(this).siblings().each(function() {
+                if ($(this).find('.depth2').css('display') === 'block' ) {
+                    $(this).find('.depth2').slideUp(300)
+                    $(this).removeClass('on')
+                }
+            })
+        }
     })
+
+    // pc화면에서 1단계메뉴에 호버했을때 2단계메뉴 보이게 하기
+    $('.depth1 > li').hover(
+        function(){
+            if ( $('html').hasClass('pc') ) {
+                $(this).find('.depth2').stop().slideDown(300)
+            }
+        },
+        function(){
+            if ( $('html').hasClass('pc') ) {
+                $(this).find('.depth2').stop().slideUp(300)
+            }
+        }
+    )
+
 
 
     /* PAGE 로드 분리 */
