@@ -212,14 +212,14 @@
     .mainSec .bloglist .listdetail hr {
         width: 30%;
         margin: 20px auto;
-        border: 0.5px solid #666;
+        border: 0.8px solid #666;
     }
     .mainSec .bloglist .listdetail hr:before {
         position: absolute;
         width: 20%;
         left: 50%;
         transform: translateX(-50%);
-        border: 0.5px solid #28BDBE;
+        border: 0.8px solid #28BDBE;
         content: '';    
     }
     .mainSec .bloglist .listdetail p {
