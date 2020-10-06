@@ -275,10 +275,10 @@
 @media only screen and (max-width: 450px) {
     /* section 0 slide */
     .mainSec .text h6 {
-        font-size: 13px;
+        font-size: 12px;
         line-height: 30px;
         font-weight: normal;
-        padding-bottom: 20px;
+        padding-bottom: 16px;
     }
     
     /* section 1 blog */
