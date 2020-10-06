@@ -489,6 +489,11 @@ footer .copyright {
         right: 0;
         transform: translateY(-50%);
     }
+    .logonav .topmenu a {
+        padding: 0px 0px;
+        display: inline-block;
+        transition: 1s;
+    }
 
 
 
