@@ -116,7 +116,7 @@
     display: inline-block;
 }
 
-.joinbox .join_list .addrbox > .w30, .emailbox > .w30 {
+.joinbox .join_list .addrbox > .w30, .joinbox .join_list .emailbox input {
     width: 27%;
 }
 
@@ -229,7 +229,9 @@
         width: 100%;
         padding-left: 1em;
     }
-    
+    .joinbox .join_list .emailbox input, #email_choice {
+        width: 30%;
+    }
     .joinbox .join_list button {
         background: #D7BA9A;
         line-height: 30px;
@@ -261,7 +263,6 @@
     .emailbox {
         display: block;
         margin: 0 auto;
-        width: 30%;
     }
 }
 
