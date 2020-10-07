@@ -54,7 +54,7 @@
 }
 
 #join {
-    padding: 5% 0 130px;
+    padding: 5% 0;
     overflow: hidden;
     display: block;
 }
@@ -112,19 +112,19 @@
     text-align: center;
 }
 
-.joinbox .join_list .info_content {
+.joinbox .join_list .info_content, .emailbox, .addrbox {
     display: inline-block;
 }
 
-.joinbox .join_list .info_content > .w30 {
+.joinbox .join_list .addrbox > .w30, .emailbox > .w30 {
     width: 27%;
 }
 
-.joinbox .join_list .info_content > .mb10 {
+.joinbox .join_list .addrbox > .mb10, .emailbox > .mb10 {
     margin-bottom: 10px;
 }
 
-.joinbox .join_list .info_content > .w100 {
+.joinbox .join_list .addrbox > .w100 {
     width: 138%;
 }
 
@@ -171,11 +171,16 @@
 @media only screen and (max-width: 992px) {
     .joinbox {
         background: #fff;
-        width: 80%;
+        width: 90%;
         margin: 0 auto;
         box-shadow: 0 0 15px rgba(0,0,0,.1);
-        padding: 30px 30px;
+        padding: 30px 0;
     }
+    .emailbox {
+        display: inline-block;
+        margin: 0 auto;
+    }
+ 
 }
 
 @media only screen and (max-width: 768px) {
@@ -203,6 +208,60 @@
         top: 50%;
         transform: translateY(-50%);
         padding: 0 6%;
+    }
+}
+
+@media only screen and (max-width: 663px) {
+    .joinbox .join_list {
+        padding: 0 8%;
+    }
+    .joinbox .join_list label {
+        position: relative;
+        display: block;
+        width: 25%;
+        height: 40px;
+        color: #666;
+    }
+    .joinbox .join_list input {
+        /* border: 1px solid red; */
+        background: #eee;
+        height: 40px;
+        width: 100%;
+        padding-left: 1em;
+    }
+    
+    .joinbox .join_list button {
+        background: #D7BA9A;
+        line-height: 30px;
+        padding: 0px 20px;
+        font-size: 12px;
+        border-radius: 20px;
+        margin-left: 1em;
+        color: #fff;
+    }
+    
+    .joinbox .join_list li {
+        padding: 8px 0;
+    }
+    
+    .joinbox .join_list .tit_lbl {
+        vertical-align: top;
+        line-height: 30px;
+        font-size: 14px;
+        font-weight: 500;
+        text-align: left;
+    }
+    .joinbox .join_list #id_lbl {
+        float: left;
+        width: 65%;
+    }
+    .joinbox .join_list .id_btn {
+        margin: 4px 0 4px 3%;
+    }
+    .emailbox {
+        display: block;
+        margin: 0 auto;
+        width: 30%;
     }
 }
 
