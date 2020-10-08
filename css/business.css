@@ -57,6 +57,9 @@ body {
     font-weight: normal;
     text-align: center;
     margin-bottom: 100px;
+    margin-left: 8.33%;
+    margin-right: 8.33%;
+    width: 83.33%;
 }
 
 .businessSec #seccol3 .subtitle span {
@@ -326,6 +329,9 @@ body {
         margin-bottom: 15px;
         font-weight: normal;
         text-align: center;
+        margin-left: 8.33%;
+        margin-right: 8.33%;
+        width: 83.33%;
     }
     .businessSec #seccol3 .explain {
         font-size: 13px;
@@ -429,9 +435,6 @@ body {
         font-weight: normal;
         text-align: center;
         margin-bottom: 100px;
-        margin-left: 8.33%;
-        margin-right: 8.33%;
-        width: 83.33%;
     }
     /* section 4 웹사이트를 만들기 전 */
     #seccol2 .titleh5 {
