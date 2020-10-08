@@ -118,3 +118,59 @@
     position: absolute;
     bottom: 0;
 }
+
+
+@media only screen and (max-width: 768px) {
+    #pfmainbgbox {
+        height: 300px;
+    }
+    .pfmainbg h2 {
+        font-size: 35px;
+        line-height: 40px;
+        color: #fff;
+        margin-bottom: 30px;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        font-weight: 500;
+        letter-spacing: 5px;
+    }
+    .pfmainbg p {
+        color: #fff;
+        opacity: 0.6;
+        font-size: 13px;
+        line-height: 22px;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 0 6%;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    #pfmainbgbox {
+        height: 250px;
+    }
+    .pfmainbg h2 {
+        font-size: 35px;
+        line-height: 40px;
+        color: #fff;
+        margin-bottom: 30px;
+        position: relative;
+        top: 70%;
+        transform: translateY(-70%);
+        font-weight: 500;
+        letter-spacing: 5px;
+    }
+    .pfmainbg p {
+        color: #fff;
+        opacity: 0.6;
+        font-size: 13px;
+        line-height: 22px;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 0 6%;
+        display: none;
+    }
+}
