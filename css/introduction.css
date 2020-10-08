@@ -74,7 +74,7 @@
 }
 
 #introbox .title h2 {
-    font-size: 32px;
+    font-size: 30px;
     line-height: 40px;
     color: #232323;
     font-weight: 500;
@@ -85,7 +85,7 @@
 }
 
 #introbox .title p {
-    font-size: 25px;
+    font-size: 22px;
     line-height: 30px;
     color: #626262;
     font-weight: 500;
@@ -94,6 +94,7 @@
 
 #introbox .titlebox .imgbox {
     text-align: right;
+    margin-top: 15px;
 }
 
 #introbox .intro {
@@ -170,7 +171,7 @@
     #introbox .titlebox {
         border-bottom: none;
         padding-top: 50px;
-        margin: 0 3%;
+        margin: 0 8.33%;
     }
     #introbox .title {
         padding-left: 0;
@@ -185,7 +186,7 @@
         line-height: 22px;
         color: #6f6f6f;
         letter-spacing: -0.5px;
-        margin: 0 3%;
+        margin: 0 8.33%;
 
     }
     
