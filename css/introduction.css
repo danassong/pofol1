@@ -54,6 +54,9 @@
 }
 
 
+
+
+
 #introbox {
     position: relative;
 }
@@ -61,6 +64,7 @@
 #introbox .titlebox {
     border-bottom: 2px solid #000;
     padding-top: 4%;
+    margin: 0 5%;
 }
 
 #introbox .title {
@@ -98,6 +102,7 @@
     line-height: 24px;
     color: #6f6f6f;
     letter-spacing: -0.5px;
+    margin: 0 5%;
 }
 
 #introbox .intro span {
@@ -106,4 +111,136 @@
     font-weight: bold;
     margin-bottom: 20px;
     display: block;
+}
+
+
+
+@media only screen and (max-width: 992px) {
+    #introbox {
+        position: relative;
+    }
+    #introbox .title {
+        padding-left: 15px;
+        width: 100%;
+        float: left;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #intropage {
+        height: 300px;
+    }
+    .introimg h2 {
+        font-size: 35px;
+        line-height: 40px;
+        color: #fff;
+        margin-bottom: 30px;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        font-weight: 500;
+        letter-spacing: 5px;
+    }
+    
+    .introimg p {
+        color: #fff;
+        opacity: 0.6;
+        font-size: 13px;
+        line-height: 22px;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 0 6%;
+    }
+
+    #introbox .title h2 {
+        font-size: 25px;
+        line-height: 32px;
+        color: #232323;
+        font-weight: 500;
+    }    
+    #introbox .title p {
+        font-size: 20px;
+        line-height: 26px;
+        color: #626262;
+        font-weight: 500;
+        padding-top: 20px;
+    }
+    #introbox .titlebox .imgbox {
+        text-align: right;
+        display: none;
+    }
+    #introbox .titlebox {
+        border-bottom: none;
+        padding-top: 50px;
+        margin: 0 3%;
+    }
+    #introbox .title {
+        padding-left: 0;
+        width: 100%;
+        float: left;
+        margin-bottom: 50px;
+    }
+
+    #introbox .intro {
+        padding: 2.5% 0 50px;
+        font-size: 13px;
+        line-height: 22px;
+        color: #6f6f6f;
+        letter-spacing: -0.5px;
+        margin: 0 3%;
+
+    }
+    
+    #introbox .intro span {
+        font-size: 16px;
+        color: #555;
+        font-weight: bold;
+        margin-bottom: 20px;
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    #intropage {
+        height: 250px;
+    }
+    .introimg h2 {
+        font-size: 35px;
+        line-height: 40px;
+        color: #fff;
+        margin-bottom: 30px;
+        position: relative;
+        top: 70%;
+        transform: translateY(-70%);
+        font-weight: 500;
+        letter-spacing: 5px;
+    }
+    
+    .introimg p {
+        color: #fff;
+        opacity: 0.6;
+        font-size: 13px;
+        line-height: 22px;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 0 6%;
+        display: none;
+    }
+
+
+    #introbox .title h2 {
+        font-size: 22px;
+        line-height: 28px;
+        color: #232323;
+        font-weight: 500;
+    }    
+    #introbox .title p {
+        font-size: 18px;
+        line-height: 22px;
+        color: #626262;
+        font-weight: 500;
+        padding-top: 20px;
+    }
 }
