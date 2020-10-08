@@ -20,7 +20,7 @@
                                     </label>
                                     <input type="text" id="id_lbl">
                                     <button class="id_btn">
-                                        아이디중복확인
+                                        중복확인
                                     </button>
                                 </li>
                                 <li>
@@ -47,33 +47,38 @@
                                     </label>
                                     <input type="text" id="phone_lbl" placeholder="휴대폰번호 - 없이 숫자만 입력해 주세요">
                                 </li>
-                                <li>
+                                <li class="emailbox">
                                     <label for="email_lbl" class="tit_lbl">
                                         e-mail
                                     </label>
-                                    <div class="info_content emailbox">
-                                        <input type="text" id="email_lbl" class="w30">
-                                        <span>@</span>
-                                        <input type="text" id="domain" disabled class="w30">
-                                        <select name="" id="email_choice" class="w30">
-                                            <option value="nochoice">- 이메일선택 -</option>
-                                            <option value="naver.com">naver.com</option>
-                                            <option value="hamail.net">hamail.net</option>
-                                            <option value="self">직접입력</option>
-                                        </select>
-                                    </div>
+                                    <input type="text" id="email_lbl">
+                                    <span>@</span>
+                                    <input type="text" id="domain" disabled>
+                                    <select name="" id="email_choice">
+                                        <option value="nochoice">- 이메일선택 -</option>
+                                        <option value="naver.com">naver.com</option>
+                                        <option value="hanmail.net">hamail.net</option>
+                                        <option value="self">직접입력</option>
+                                    </select>
                                 </li>
-                                <li>
+                                <li class="addrbox">
                                     <label for="addr_lbl" class="tit_lbl">
                                         주소
                                     </label>
-                                    <div class="info_content addrbox">
-                                        <input class='mb10' type="text" id="addr_lbl">
-                                        <button type="button">우편번호</button><br>
-                                        <input class="w100 mb10" type="text" id="addr1" placeholder="도로명주소"><br>
-                                        <input class="w100 mb10" type="text" id="addr2" placeholder="지번주소"><br>
-                                        <input class="w100 mb10" type="text" id="addr3" placeholder="나머지주소"><br>
-                                    </div>
+                                    <input type="text" id="addr_lbl">
+                                    <button type="button" class="addr_btn">우편번호</button><br>
+                                    <label for="addr_lbl" class="tit_lbl blind nonelbl">
+                                        도로명주소
+                                    </label>
+                                    <input type="text" id="addr1" placeholder="도로명주소"><br>
+                                    <label for="addr_lbl" class="tit_lbl blind nonelbl">
+                                        지번주소
+                                    </label>
+                                    <input type="text" id="addr2" placeholder="지번주소"><br>
+                                    <label for="addr_lbl" class="tit_lbl blind nonelbl">
+                                        나머지주소
+                                    </label>
+                                    <input type="text" id="addr3" placeholder="나머지주소"><br>
                                 </li>
                             </ul>
                             <div class="btn">

@@ -53,6 +53,8 @@
     transform: translateY(-50%);
 }
 
+
+/* 회원가입 정보 */
 #join {
     padding: 5% 0;
     overflow: hidden;
@@ -63,7 +65,7 @@
     background: #fff;
     width: 900px;
     margin: 0 auto;
-    box-shadow: 0 0 15px rgba(0,0,0,.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, .1);
     padding: 40px 80px;
 }
 
@@ -74,6 +76,8 @@
     text-align: center;
 }
 
+
+/* 공통 라벨과 인풋 버튼 */
 .joinbox .join_list label {
     position: relative;
     display: inline-block;
@@ -83,7 +87,8 @@
 }
 
 .joinbox .join_list input {
-    /* border: 1px solid red; */
+    position: relative;
+    display: inline-block;
     background: #eee;
     height: 40px;
     width: 48%;
@@ -112,46 +117,44 @@
     text-align: center;
 }
 
-.joinbox .join_list .info_content, .emailbox, .addrbox {
-    display: inline-block;
-}
 
-.joinbox .join_list .addrbox > .w30, .joinbox .join_list .emailbox input {
-    width: 27%;
-}
-
-.joinbox .join_list .addrbox > .mb10, .emailbox > .mb10 {
-    margin-bottom: 10px;
-}
-
-.joinbox .join_list .addrbox > .w100 {
-    width: 138%;
-}
-
-.joinbox .join_list .info_content > span {
+/* 이메일과 주소박스 */
+.joinbox .join_list .emailbox span {
     display: inline-block;
     position: relative;
     font-size: 14px;
-}
-
-.join_list .info_content span {
     font-size: 14px;
     color: #666;
     line-height: 45px;
     padding: 0 5px;
 }
 
-.join_list .info_content select {
+.join_list .emailbox input {
+    width: 22%;
+}
+
+.join_list .emailbox select {
+    width: 22%;
     height: 30px;
     border: 1px solid #eee;
     border-radius: 3px;
     /* padding: 0 1em; */
 }
 
+#addr_lbl,
+#addr1,
+#addr2,
+#addr3 {
+    margin-bottom: 10px;
+}
+
+
+/* 제출버튼 */
 .join_form .btn {
     margin-top: 20px;
     text-align: center;
 }
+
 .join_form .btn input {
     width: 120px;
     height: 40px;
@@ -162,6 +165,7 @@
     font-size: 14px;
     margin: 0 10px;
 }
+
 .join_form .btn input[type=submit] {
     background: #4B637C;
 }
@@ -173,20 +177,18 @@
         background: #fff;
         width: 90%;
         margin: 0 auto;
-        box-shadow: 0 0 15px rgba(0,0,0,.1);
+        box-shadow: 0 0 15px rgba(0, 0, 0, .1);
         padding: 30px 0;
     }
-    .emailbox {
-        display: inline-block;
-        margin: 0 auto;
-    }
- 
+
+
 }
 
 @media only screen and (max-width: 768px) {
     #joinpage {
         height: 300px;
     }
+
     .joinimg h2 {
         font-size: 35px;
         line-height: 40px;
@@ -198,7 +200,7 @@
         font-weight: 500;
         letter-spacing: 5px;
     }
-    
+
     .joinimg p {
         color: #fff;
         opacity: 0.6;
@@ -215,6 +217,7 @@
     .joinbox .join_list {
         padding: 0 8%;
     }
+
     .joinbox .join_list label {
         position: relative;
         display: block;
@@ -222,6 +225,7 @@
         height: 40px;
         color: #666;
     }
+
     .joinbox .join_list input {
         /* border: 1px solid red; */
         background: #eee;
@@ -229,23 +233,11 @@
         width: 100%;
         padding-left: 1em;
     }
-    .joinbox .join_list .emailbox input, #email_choice {
-        width: 30%;
-    }
-    .joinbox .join_list button {
-        background: #D7BA9A;
-        line-height: 30px;
-        padding: 0px 20px;
-        font-size: 12px;
-        border-radius: 20px;
-        margin-left: 1em;
-        color: #fff;
-    }
-    
+
     .joinbox .join_list li {
         padding: 8px 0;
     }
-    
+
     .joinbox .join_list .tit_lbl {
         vertical-align: top;
         line-height: 30px;
@@ -253,16 +245,32 @@
         font-weight: 500;
         text-align: left;
     }
-    .joinbox .join_list #id_lbl {
-        float: left;
-        width: 65%;
+
+    /* 이메일과 주소박스 */
+    .join_list .emailbox input {
+        width: 30%;
     }
-    .joinbox .join_list .id_btn {
+
+    .join_list .emailbox select {
+        width: 28%;
+        height: 30px;
+        border: 1px solid #eee;
+        border-radius: 3px;
+        /* padding: 0 1em; */
+    }
+
+    .joinbox .join_list #id_lbl,
+    .joinbox .join_list #addr_lbl {
+        float: left;
+        width: 60%;
+    }
+
+    .joinbox .join_list .id_btn,
+    .joinbox .join_list .addr_btn {
         margin: 4px 0 4px 3%;
     }
-    .emailbox {
-        display: block;
-        margin: 0 auto;
+    .joinbox .join_list .nonelbl {
+        display: none;
     }
 }
 
@@ -271,6 +279,7 @@
     #joinpage {
         height: 250px;
     }
+
     .joinimg h2 {
         font-size: 35px;
         line-height: 40px;
@@ -282,7 +291,7 @@
         font-weight: 500;
         letter-spacing: 5px;
     }
-    
+
     .joinimg p {
         color: #fff;
         opacity: 0.6;
@@ -293,6 +302,17 @@
         transform: translateY(-50%);
         padding: 0 6%;
         display: none;
+    }
+    /* 이메일과 주소박스 */
+    .join_list .emailbox input {
+        width: 28%;
+    }
+
+    .join_list .emailbox select {
+        width: 28%;
+        height: 30px;
+        border: 1px solid #eee;
+        border-radius: 3px;
     }
 
 }
