@@ -91,8 +91,7 @@ header {
     padding: 13px 0 15px;
     font-size: 13px;
     display: none;
-/*     transition: 1s;
- */}
+}
 
 .logonav .nav .depth2 li {
     padding: 0 28px;
@@ -427,7 +426,9 @@ footer .copyright {
         width: 100%;
         text-align: center;
         padding-bottom: 30px;
+        margin-right: 0;
         display: block;
+        font-size: 25px;
     }
     footer .address {
         padding-bottom: 30px;
@@ -498,9 +499,10 @@ footer .copyright {
 
 
     footer .logo {
-        float: left;
+        float: none;
         width: 100%;
         padding-bottom: 0px;
+        display: inline-block;
     }
     footer .logo h3 {
         font-size: 20px;
@@ -509,7 +511,7 @@ footer .copyright {
         text-align: center;
         padding-top: 20px;
         padding-bottom: 20px;
-        display: block;
+        display: inline-block;
     }
     footer .notice {
         display: none;
@@ -518,8 +520,7 @@ footer .copyright {
         padding-bottom: 10px;
     }
     footer .infofirst {
-        display: inline-block;
+        display: block;
         padding-bottom: 20px;
-        border-bottom: 0.5px solid #6f6f6f;
     }
 }
