@@ -258,6 +258,13 @@ body {
 
 
     /* section 4 웹사이트를 만들기 전 */
+    #seccol2 .titleh5h6 {
+        float: none;
+        width: 100%;
+        padding: 0 15px 30px;
+        margin-left: 8.33%;
+        margin-right: 8.33%;
+    }
     #seccol2 .titleh5 {
         font-size: 32px;
         line-height: 40px;
@@ -265,16 +272,12 @@ body {
         margin-bottom: 25px;
         font-weight: normal;
         text-align: left;
-        margin-left: 8.33%;
-        margin-right: 8.33%;
         width: 83.33%;
     }
     #seccol2 h6 {
         font-size: 16px;
         line-height: 23px;
         color: #939393;
-        margin-left: 8.33%;
-        margin-right: 8.33%;
         width: 83.33%;
     }
     #seccol2 .explain {
@@ -360,6 +363,13 @@ body {
 
 
     /* section 4 웹사이트를 만들기 전 */
+    #seccol2 .titleh5h6 {
+        float: none;
+        width: 100%;
+        padding: 0 15px 30px;
+        margin-left: 8.33%;
+        margin-right: 8.33%;
+    }
     #seccol2 .titleh5 {
         font-size: 26px;
         line-height: 32px;
@@ -443,9 +453,11 @@ body {
         text-align: left;
     }
     #seccol2 .titleh5h6 {
-        float: left;
+        float: none;
         width: 100%;
         padding: 0 15px 30px;
+        margin-left: 8.33%;
+        margin-right: 8.33%;
     }
 
     /* section 5 웹사이트를 만들면서 */
