@@ -58,6 +58,7 @@
 /* 테이블 */
 .noticeBox {
     margin: 0 auto;
+    padding: 0 5%;
 }
 .noticeTable {
     margin: 20px 0 50px;
@@ -163,3 +164,91 @@
 }
 
 
+@media only screen and (max-width: 992px) {
+
+
+}
+
+@media only screen and (max-width: 768px) {
+    #noticebgbox {
+        height: 300px;
+    }
+    .noticebg h2 {
+        font-size: 35px;
+        line-height: 40px;
+        color: #fff;
+        margin-bottom: 30px;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        font-weight: 500;
+        letter-spacing: 5px;
+    }
+    
+    .noticebg p {
+        color: #fff;
+        opacity: 0.6;
+        font-size: 13px;
+        line-height: 22px;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 0 6%;
+    }
+
+    .noticePage .numlist a:nth-of-type(6),
+    .noticePage .numlist a:nth-of-type(7),
+    .noticePage .numlist a:nth-of-type(8),
+    .noticePage .numlist a:nth-of-type(9),
+    .noticePage .numlist a:nth-of-type(10) {
+        display: none;
+    }
+
+    .noticeTable col:nth-child(1) {
+        width: 8%;
+    }
+    .noticeTable col:nth-child(2) {
+        width: auto;
+    }
+    .noticeTable col:nth-child(3) {
+        width: 13%;
+    }
+    .noticeTable col:nth-child(4) {
+        width: 13%;
+    }
+    
+    .noticeTable th:nth-child(5),
+    .noticeTable tbody tr td:nth-child(5) {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    #noticebgbox {
+        height: 250px;
+    }
+    .noticebg h2 {
+        font-size: 35px;
+        line-height: 40px;
+        color: #fff;
+        margin-bottom: 30px;
+        position: relative;
+        top: 70%;
+        transform: translateY(-70%);
+        font-weight: 500;
+        letter-spacing: 5px;
+    }
+    
+    .noticebg p {
+        color: #fff;
+        opacity: 0.6;
+        font-size: 13px;
+        line-height: 22px;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 0 6%;
+        display: none;
+    }
+
+}

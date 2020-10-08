@@ -116,9 +116,6 @@
 
 
 @media only screen and (max-width: 992px) {
-    #introbox {
-        position: relative;
-    }
     #introbox .title {
         padding-left: 15px;
         width: 100%;
