@@ -91,6 +91,9 @@
 
 .noticeTable tbody td:nth-child(2) {
     text-align: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden; 
 }
 .noticeTable th {
     background:#28BDBE;
@@ -101,6 +104,8 @@
     background:#28BDBE;
     color: #fff;
 }
+
+
 
 .noticePage .numlist {
     position: relative;
@@ -205,7 +210,8 @@
     }
 
     .noticeTable col:nth-child(1) {
-        width: 8%;
+        width: 0%;
+        display: none;
     }
     .noticeTable col:nth-child(2) {
         width: auto;
@@ -214,14 +220,57 @@
         width: 13%;
     }
     .noticeTable col:nth-child(4) {
-        width: 13%;
+        width: 16%;
     }
-    
+    .noticeTable col:nth-child(5) {
+        width: 0%;
+        display: none;
+    }
+
+    .noticeTable th:nth-child(1),
+    .noticeTable tbody tr td:nth-child(1),    
     .noticeTable th:nth-child(5),
     .noticeTable tbody tr td:nth-child(5) {
         display: none;
     }
+
+    /* 검색창 */
+    .sbox input[type=text] {
+        height: 30px;
+        width: 200px;
+        text-indent: 1em;
+        vertical-align: middle;
+        border: 1px solid #ddd;
+    }
 }
+
+@media only screen and (max-width: 663px) {
+    .noticeTable col:nth-child(2) {
+        width: auto;
+    }
+    .noticeTable col:nth-child(3) {
+        width: 20%;
+    }
+    .noticeTable col:nth-child(4) {
+        width: 16%;
+        display: none;
+    }
+    .noticeTable th:nth-child(4),
+    .noticeTable tbody tr td:nth-child(4) {
+        display: none;
+    }
+
+    /* 검색창 */
+    .sbox input[type=text] {
+        height: 30px;
+        width: 180px;
+        text-indent: 1em;
+        vertical-align: middle;
+        border: 1px solid #ddd;
+    }
+}
+
+
 
 @media only screen and (max-width: 450px) {
     #noticebgbox {
@@ -251,4 +300,14 @@
         display: none;
     }
 
+
+    .noticeBox {
+        margin: 70px auto 0;
+        padding: 0 5%;
+    }
+    .sbox {
+        margin: 70px 0 30px;
+        text-align: right;
+        display: none;
+    }
 }
