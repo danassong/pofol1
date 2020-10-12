@@ -252,6 +252,34 @@ footer .copyright {
 
 
 
+.introAni {
+    position: fixed;
+    top: 0; left: 0; bottom: 0; right: 0;
+    background: rgba(0, 0, 0, 0.85);
+    color: #fff;
+    font-size: 50px;
+    z-index: 9999999999999999;
+}
+
+.introAni i { 
+    position: absolute;
+    display: inline-block;
+    top: 45%;
+    transform: translateY(-45%);
+    width: 100%;
+    text-align: center;
+    animation: colorchange 5s both linear;
+}
+@keyframes colorchange {
+    0% { color: #4A3C95;}
+    20% { color: #B22B8A;}
+    40% { color: #C11A30;}
+    60% { color: #C6851B;}
+    80% { color: #87C12D;}
+    100% { color: #28BDBE; transform: translateY(-45%) rotate(3turn);}
+}
+
+
 
 @media only screen and (max-width: 1240px) {
 

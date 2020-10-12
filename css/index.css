@@ -668,24 +668,6 @@
 }
 
 
-.introAni {
-    position: fixed;
-    top: 0; left: 0; bottom: 0; right: 0;
-    background: rgba(0, 0, 0, 0.85);
-    color: #fff;
-    font-size: 50px;
-    z-index: 9999999999999999;
-}
-
-.introAni i {
-    position: absolute;
-    top: 45%;
-    transform: translateY(-45%);
-    width: 100%;
-    text-align: center;
-}
-
-
 
 
 @media screen and (max-width: 1170px) {

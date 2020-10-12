@@ -1,9 +1,11 @@
 (function ($) {
 
     /* 첫 로딩 화면 */
-    var colorCode = ['#28BDBE', '#7CC6C6', '#B0DADA', '#DAEDED']
+/*     var colorCode = ['#28BDBE', '#7CC6C6', '#B0DADA', '#DAEDED']
     var minCnt = setInterval(minusCount, 500)
     var k = 5
+
+
 
     function minusCount() {
         k--;
@@ -15,7 +17,12 @@
         $('.introAni i').css({
             color: colorCode[k - 1]
         })
-    }
+    } */
+
+
+    $(window).on('load', function(){
+        $('.introAni').delay(5000).fadeOut(500)
+    })
 
 
     init()
