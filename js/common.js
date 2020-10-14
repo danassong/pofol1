@@ -160,6 +160,9 @@
             $('.logonav .nav .depth2').css({
                 top: '92%'
             })
+            $('.logonav .navwrap').css({
+                top: '31px'
+            })
             
         } else {
             // 상단 탑
@@ -182,7 +185,9 @@
             $('.logonav .nav .depth2').css({
                 top: '100%'
             })
-            
+            $('.logonav .navwrap').css({
+                top: '36px'
+            })
         }
 
 

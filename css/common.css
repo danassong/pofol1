@@ -32,11 +32,6 @@ header {
     transition: 1s;
 }
 
-/* header .logonav {
-    position: relative;
-    height: 72px;
-} */
-
 .logonav .open_nav {
     display: none;
 }
@@ -301,6 +296,7 @@ footer .copyright {
 @media only screen and ( max-width: 1055px ) {
     #header .logonav {
         position: relative;
+        transition: 1s;
     }
     #header .logonav h1 {
         float: none;
@@ -331,8 +327,10 @@ footer .copyright {
 
     .logonav .navwrap {
         display: none;
-        position: absolute;
-        top: 100%; left: 0%;
+        position: fixed;
+        top: 72px; left: 0%;
+        bottom: 0;
+        overflow-y: auto;
         transform: translate(0%, 0%);
         z-index:999999;
         width: 100%;
@@ -373,7 +371,7 @@ footer .copyright {
         padding: 13px 0 15px;
         font-size: 13px;
         display: none;
-        /* transition: 1s; */
+        transition: 1s;
     }
 
 
