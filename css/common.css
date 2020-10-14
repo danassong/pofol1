@@ -22,14 +22,14 @@
     z-index: 9999999999;
 }
 
-header {
+#header {
     position: fixed;
     width: 100%;
     top: 0; left: 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     z-index: 9999;
     height: 72px;
-    transition: 1s;
+    transition: all 1s;
 }
 
 .logonav .open_nav {
@@ -40,11 +40,9 @@ header {
 }
 
 .logonav h1 {
-    float: left;
     font-size: 24px;
     color: #fff;
-    padding: 21.7px 15px;
-    transition: 1s;
+    padding: 0 15px;
     margin: 0 50px;
     position: absolute;
     top: 50%;
@@ -59,7 +57,8 @@ header {
 .logonav .navwrap {
     position: absolute;
     top: 50%; left: 50%;
-    transform: translate(-50%, -50%);    
+    transform: translate(-50%, -50%);
+    transition: top 1s;
 }
 .logonav .nav .depth1 > li {
     display: inline-block;
@@ -86,10 +85,11 @@ header {
     padding: 13px 0 15px;
     font-size: 13px;
     display: none;
+    transition: top 1s;
 }
 
 .logonav .nav .depth2 li {
-    padding: 0 28px;
+    padding: 0 28px;  
 }
 
 .logonav .nav .depth2 li a {
@@ -117,7 +117,6 @@ header {
     font-weight: 700;
     font-size: 11px;
     text-align: right;
-    float: right;
     margin: 0 50px;
     position: absolute;
     top: 50%;
@@ -126,9 +125,8 @@ header {
 }
 
 .logonav .topmenu a {
-    padding: 30px 10px;
+    padding: 0 10px;
     display:inline-block;
-    transition: 1s;
 }
 
 /* footer */
@@ -294,12 +292,7 @@ footer .copyright {
 }
 
 @media only screen and ( max-width: 1055px ) {
-    #header .logonav {
-        position: relative;
-        transition: 1s;
-    }
     #header .logonav h1 {
-        float: none;
         margin: 0 auto;
         position: absolute;
         top: 50%;
@@ -308,17 +301,20 @@ footer .copyright {
     }
     #header .logonav i {
         font-size: 20px;
-        padding: 26px 0 ;
         color: #fff;
-        transition: 1s;
-        z-index:9999;
         margin: 0 50px;
     }
     #header .logonav .open_nav {
         display: block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
     }
     #header .logonav .close_nav {
         display: none;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
     }
     .logonav .nav .depth1 > li:hover .depth2 {
         display: none;
@@ -349,7 +345,6 @@ footer .copyright {
         font-size: 14px;
         font-weight: bold;
         margin: 0 30px;
-        padding: 28px 0 ;
     }
     
     #header .nav .depth1 > li:nth-child(2),
@@ -365,13 +360,10 @@ footer .copyright {
         position: static;
         top: 100%;
         width: 100%;
-        background: rgba(35,35,35,1);
-        color: #9d9d9d;
         text-align: left;
         padding: 13px 0 15px;
         font-size: 13px;
         display: none;
-        transition: 1s;
     }
 
 
@@ -384,7 +376,6 @@ footer .copyright {
         font-weight: 700;
         font-size: 11px;
         text-align: right;
-        float: none;
         margin: 0 50px;
         display: inline-block;
         position: absolute;
@@ -392,13 +383,7 @@ footer .copyright {
         right: 0;
         transform: translateY(-50%);
     }
-    
-    .logonav .topmenu a {
-        padding: 0px 10px;
-        display: inline-block;
-        transition: 1s;
-    }
-}
+
 
 @media only screen and (max-width: 992px) {
     footer .infofirst,
@@ -434,6 +419,15 @@ footer .copyright {
         float: left;
         width: 100%;
         padding: 0 20px;
+    }
+
+    #header .logonav i {
+        margin: 0 30px;
+    }
+    .logonav .topmenu {
+        float: none;
+        margin: 0 30px;
+        display: inline-block;
     }
 
     
@@ -481,47 +475,14 @@ footer .copyright {
 @media only screen and (max-width: 450px) {
     #header .logonav i {
         font-size: 20px;
-        padding: 26px 0 ;
-        color: #fff;
-        transition: 1s;
-        z-index:9999;
-        margin: 0 30px;
     }
-    .logonav .topmenu {
-        color: #fff;
-        font-weight: 700;
-        font-size: 11px;
-        text-align: right;
-        float: none;
-        margin: 0 30px;
-        display: inline-block;
-        position: absolute;
-        top: 50%;
-        right: 0;
-        transform: translateY(-50%);
-    }
-    #header .topmenu :nth-child(2) {
+    #header .topmenu a:nth-child(2) {
         display: none;
     }
-    .logonav .topmenu {
-        color: #fff;
-        font-weight: 700;
-        font-size: 11px;
-        text-align: right;
-        float: none;
-        margin: 0 30px;
-        display: inline-block;
-        position: absolute;
-        top: 50%;
-        right: 0;
-        transform: translateY(-50%);
-    }
     .logonav .topmenu a {
-        padding: 0px 0px;
+        padding: 0 0px;
         display: inline-block;
-        transition: 1s;
     }
-
 
     footer .infofirst,
     footer .infodetail {

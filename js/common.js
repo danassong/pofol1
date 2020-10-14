@@ -27,25 +27,24 @@
 
     init()
 
-    var flag = true
 
     function init() {
         var ww = $(window).width()
-        if (ww > 1055) {
+        if (ww > 1055 && !$('html').hasClass('pc')) {
             $('html').addClass('pc').removeClass('mobile')
-            if(flag) {
-                $('.logonav .navwrap').show()
-                $('.depth1 > li').removeClass('on')
-                $('.open_nav, .close_nav, .depth2').hide()
-                flag = false
-            }
-        } else if (ww <= 1055) {
+            $('.logonav .navwrap').show()
+            $('.depth1 > li').removeClass('on')
+            $('.open_nav, .close_nav, .depth2').hide()
+            $('.logonav .navwrap').css({
+                top: '36px'
+            })
+        } else if (ww <= 1055 && !$('html').hasClass('mobile')) {
             $('html').addClass('mobile').removeClass('pc')
-            if (!flag) {
-                $('.open_nav').show()
-                $('.logonav .navwrap').hide()
-                flag = true
-            }
+            $('.open_nav').show()
+            $('.logonav .navwrap').hide()
+            $('.logonav .navwrap').css({
+                top: '72px'
+            })
         }
     }
 
@@ -129,7 +128,6 @@
         $('#secBox').load(url)
     })
 
-    // $('.logonav > h1').load('index.html')
 
 
 
@@ -139,30 +137,24 @@
         sct = $(this).scrollTop();
 
         //헤더 상단
-        if (sct >= 200) {
+        if (sct >= 72) {
             // 내리면
             $("header").css({
                 background: 'rgba(0,0,0,0.5)',
                 height: '62px'
             });
-            $('.logonav h1').css({
-                paddingTop: '16.7px',
-                paddingBottom: '16.7px',
-            })
-            $('.logonav .topmenu a').css({
-                paddingTop: '25px',
-                paddingBottom: '25px',
-            })
-            $('.open_nav i, .close_nav i').css({
-                paddingTop: '21px',
-                paddingBottom: '21px',
-            })
             $('.logonav .nav .depth2').css({
                 top: '92%'
             })
-            $('.logonav .navwrap').css({
-                top: '31px'
-            })
+            if ($('html').hasClass('pc')) {
+                $('.logonav .navwrap').css({
+                    top: '31px'
+                })
+            } else if ($('html').hasClass('mobile')) {
+                $('.logonav .navwrap').css({
+                    top: '62px'
+                })
+            }
             
         } else {
             // 상단 탑
@@ -170,24 +162,19 @@
                 background: 'rgba(0,0,0,0)',
                 height: '72px'
             });
-            $('.logonav h1').css({
-                paddingTop: '21.7px',
-                paddingBottom: '21.7px',
-            });
-            $('.logonav .topmenu a').css({
-                paddingTop: '30px',
-                paddingBottom: '30px',
-            })
-            $('.open_nav i, .close_nav i').css({
-                paddingTop: '26px',
-                paddingBottom: '26px',
-            })
             $('.logonav .nav .depth2').css({
                 top: '100%'
             })
-            $('.logonav .navwrap').css({
-                top: '36px'
-            })
+
+            if ($('html').hasClass('pc')) {
+                $('.logonav .navwrap').css({
+                    top: '36px'
+                })
+            } else if ($('html').hasClass('mobile')) {
+                $('.logonav .navwrap').css({
+                    top: '72px'
+                })
+            }
         }
 
 
