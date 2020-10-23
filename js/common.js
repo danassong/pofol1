@@ -113,12 +113,15 @@
         $('#secContainer').remove()
         $('#secBox').load(url)
 
-        $('.navwrap').stop().slideUp(300)
-        $('#header .logonav .close_nav').hide()
-        $('#header .logonav .open_nav').css({
-            display: 'block'
-        })
-
+        if ($('html').hasClass('mobile')) {
+            $('.navwrap').stop().slideUp(300)
+            $('#header .logonav .close_nav').hide()
+            $('#header .logonav .open_nav').css({
+                display: 'block'
+            })
+        } else if ($('html').hasClass('pc')) {
+            $('.navwrap .depth2').stop().slideUp()
+        }
     })
 
     $('.topmenu > a').on('click', function (e) {
